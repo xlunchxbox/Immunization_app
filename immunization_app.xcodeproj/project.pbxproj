@@ -26,6 +26,7 @@
 		E3F6385B1803316900D7621B /* login_logo-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F638591803316900D7621B /* login_logo-01.png */; };
 		E3F6385E180335A300D7621B /* home_addpatient_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6385C180335A300D7621B /* home_addpatient_button-01.png */; };
 		E3F6385F180335A300D7621B /* home_search_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6385D180335A300D7621B /* home_search_button-01.png */; };
+		E3F63861180338D000D7621B /* search_search_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63860180338D000D7621B /* search_search_button-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E3F638591803316900D7621B /* login_logo-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_logo-01.png"; sourceTree = "<group>"; };
 		E3F6385C180335A300D7621B /* home_addpatient_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_addpatient_button-01.png"; sourceTree = "<group>"; };
 		E3F6385D180335A300D7621B /* home_search_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_search_button-01.png"; sourceTree = "<group>"; };
+		E3F63860180338D000D7621B /* search_search_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_search_button-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		E3F6382818032CD400D7621B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3F63860180338D000D7621B /* search_search_button-01.png */,
 				E3F6385C180335A300D7621B /* home_addpatient_button-01.png */,
 				E3F6385D180335A300D7621B /* home_search_button-01.png */,
 				E3F638581803316900D7621B /* login_login_button-01.png */,
@@ -250,6 +253,7 @@
 				E3F6385718032E0600D7621B /* background-01.png in Resources */,
 				E3F6385B1803316900D7621B /* login_logo-01.png in Resources */,
 				E3F6383518032CD400D7621B /* Main.storyboard in Resources */,
+				E3F63861180338D000D7621B /* search_search_button-01.png in Resources */,
 				E3F6385A1803316900D7621B /* login_login_button-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
