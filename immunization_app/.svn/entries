@@ -89,7 +89,35 @@ file
 
 add
 
+patientinfo_uploadpic_icon-01.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
 login_logo-01.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+patientinfo_updateinfo_button-01.png
 file
 
 
@@ -117,6 +145,13 @@ add
 has-props
 has-prop-mods
 
+navigation
+dir
+
+
+
+add
+
 Base.lproj
 dir
 
@@ -138,12 +173,47 @@ dir
 
 add
 
+vaccinatin chart
+dir
+
+
+
+add
+
 ViewController.h
 file
 
 
 
 add
+
+patientinfo_profilepic_icon-01.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+home_nurse-01.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 AppDelegate.m
 file

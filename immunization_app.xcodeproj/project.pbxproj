@@ -27,6 +27,37 @@
 		E3F6385E180335A300D7621B /* home_addpatient_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6385C180335A300D7621B /* home_addpatient_button-01.png */; };
 		E3F6385F180335A300D7621B /* home_search_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6385D180335A300D7621B /* home_search_button-01.png */; };
 		E3F63861180338D000D7621B /* search_search_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63860180338D000D7621B /* search_search_button-01.png */; };
+		E3F638651803487B00D7621B /* patientinfo_profilepic_icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F638621803487B00D7621B /* patientinfo_profilepic_icon-01.png */; };
+		E3F638661803487B00D7621B /* patientinfo_updateinfo_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F638631803487B00D7621B /* patientinfo_updateinfo_button-01.png */; };
+		E3F638671803487B00D7621B /* patientinfo_uploadpic_icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F638641803487B00D7621B /* patientinfo_uploadpic_icon-01.png */; };
+		E3F6386918034CDA00D7621B /* home_nurse-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386818034CDA00D7621B /* home_nurse-01.png */; };
+		E3F6387618034D5D00D7621B /* navigation_camera_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386B18034D5D00D7621B /* navigation_camera_button-01.png */; };
+		E3F6387718034D5D00D7621B /* navigation_healthhistory_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386C18034D5D00D7621B /* navigation_healthhistory_button-01.png */; };
+		E3F6387818034D5D00D7621B /* navigation_highlight_healthhistory_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386D18034D5D00D7621B /* navigation_highlight_healthhistory_button-01.png */; };
+		E3F6387918034D5D00D7621B /* navigation_highlight_vaccinationchart_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386E18034D5D00D7621B /* navigation_highlight_vaccinationchart_button-01.png */; };
+		E3F6387A18034D5D00D7621B /* navigation_logobar-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6386F18034D5D00D7621B /* navigation_logobar-01.png */; };
+		E3F6387B18034D5D00D7621B /* navigation_logout_button-01-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387018034D5D00D7621B /* navigation_logout_button-01-01.png */; };
+		E3F6387C18034D5D00D7621B /* navigation_logout_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387118034D5D00D7621B /* navigation_logout_button-01.png */; };
+		E3F6387D18034D5D00D7621B /* navigation_redbar-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387218034D5D00D7621B /* navigation_redbar-01.png */; };
+		E3F6387E18034D5D00D7621B /* navigation_slider-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387318034D5D00D7621B /* navigation_slider-01.png */; };
+		E3F6387F18034D5D00D7621B /* navigation_vaccinationchart_button-01-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387418034D5D00D7621B /* navigation_vaccinationchart_button-01-01.png */; };
+		E3F6388018034D5D00D7621B /* navigation_vaccinationchart_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6387518034D5D00D7621B /* navigation_vaccinationchart_button-01.png */; };
+		E3F63893180350D700D7621B /* vaccinationchart_14wks_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63883180350D700D7621B /* vaccinationchart_14wks_button_red-01.png */; };
+		E3F63894180350D700D7621B /* vaccinationchart_15-18months_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63884180350D700D7621B /* vaccinationchart_15-18months_button_red-01.png */; };
+		E3F63895180350D700D7621B /* vaccinationchart_2-5years_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63885180350D700D7621B /* vaccinationchart_2-5years_button_red-01.png */; };
+		E3F63896180350D700D7621B /* vaccinationchart_6wks_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63886180350D700D7621B /* vaccinationchart_6wks_button_red-01.png */; };
+		E3F63897180350D700D7621B /* vaccinationchart_9-12months_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63887180350D700D7621B /* vaccinationchart_9-12months_button_red-01.png */; };
+		E3F63898180350D700D7621B /* vaccinationchart_9-13years_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63888180350D700D7621B /* vaccinationchart_9-13years_button_red-01.png */; };
+		E3F63899180350D700D7621B /* vaccinationchart_birth_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63889180350D700D7621B /* vaccinationchart_birth_button_red-01.png */; };
+		E3F6389A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png */; };
+		E3F6389B180350D700D7621B /* vaccinationchart_10wks_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388B180350D700D7621B /* vaccinationchart_10wks_button-01.png */; };
+		E3F6389C180350D700D7621B /* vaccinationchart_14wks_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388C180350D700D7621B /* vaccinationchart_14wks_button-01.png */; };
+		E3F6389D180350D700D7621B /* vaccinationchart_15-18months_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388D180350D700D7621B /* vaccinationchart_15-18months_button-01.png */; };
+		E3F6389E180350D700D7621B /* vaccinationchart_2-5years_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388E180350D700D7621B /* vaccinationchart_2-5years_button-01.png */; };
+		E3F6389F180350D700D7621B /* vaccinationchart_6wks_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F6388F180350D700D7621B /* vaccinationchart_6wks_button-01.png */; };
+		E3F638A0180350D700D7621B /* vaccinationchart_9-12months_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63890180350D700D7621B /* vaccinationchart_9-12months_button.png */; };
+		E3F638A1180350D700D7621B /* vaccinationchart_9-13years_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63891180350D700D7621B /* vaccinationchart_9-13years_button-01.png */; };
+		E3F638A2180350D700D7621B /* vaccinationchart_birth_button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F63892180350D700D7621B /* vaccinationchart_birth_button-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +96,37 @@
 		E3F6385C180335A300D7621B /* home_addpatient_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_addpatient_button-01.png"; sourceTree = "<group>"; };
 		E3F6385D180335A300D7621B /* home_search_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_search_button-01.png"; sourceTree = "<group>"; };
 		E3F63860180338D000D7621B /* search_search_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_search_button-01.png"; sourceTree = "<group>"; };
+		E3F638621803487B00D7621B /* patientinfo_profilepic_icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patientinfo_profilepic_icon-01.png"; sourceTree = "<group>"; };
+		E3F638631803487B00D7621B /* patientinfo_updateinfo_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patientinfo_updateinfo_button-01.png"; sourceTree = "<group>"; };
+		E3F638641803487B00D7621B /* patientinfo_uploadpic_icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patientinfo_uploadpic_icon-01.png"; sourceTree = "<group>"; };
+		E3F6386818034CDA00D7621B /* home_nurse-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_nurse-01.png"; sourceTree = "<group>"; };
+		E3F6386B18034D5D00D7621B /* navigation_camera_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_camera_button-01.png"; sourceTree = "<group>"; };
+		E3F6386C18034D5D00D7621B /* navigation_healthhistory_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_healthhistory_button-01.png"; sourceTree = "<group>"; };
+		E3F6386D18034D5D00D7621B /* navigation_highlight_healthhistory_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_highlight_healthhistory_button-01.png"; sourceTree = "<group>"; };
+		E3F6386E18034D5D00D7621B /* navigation_highlight_vaccinationchart_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_highlight_vaccinationchart_button-01.png"; sourceTree = "<group>"; };
+		E3F6386F18034D5D00D7621B /* navigation_logobar-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_logobar-01.png"; sourceTree = "<group>"; };
+		E3F6387018034D5D00D7621B /* navigation_logout_button-01-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_logout_button-01-01.png"; sourceTree = "<group>"; };
+		E3F6387118034D5D00D7621B /* navigation_logout_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_logout_button-01.png"; sourceTree = "<group>"; };
+		E3F6387218034D5D00D7621B /* navigation_redbar-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_redbar-01.png"; sourceTree = "<group>"; };
+		E3F6387318034D5D00D7621B /* navigation_slider-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_slider-01.png"; sourceTree = "<group>"; };
+		E3F6387418034D5D00D7621B /* navigation_vaccinationchart_button-01-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_vaccinationchart_button-01-01.png"; sourceTree = "<group>"; };
+		E3F6387518034D5D00D7621B /* navigation_vaccinationchart_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_vaccinationchart_button-01.png"; sourceTree = "<group>"; };
+		E3F63883180350D700D7621B /* vaccinationchart_14wks_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_14wks_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63884180350D700D7621B /* vaccinationchart_15-18months_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_15-18months_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63885180350D700D7621B /* vaccinationchart_2-5years_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_2-5years_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63886180350D700D7621B /* vaccinationchart_6wks_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_6wks_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63887180350D700D7621B /* vaccinationchart_9-12months_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_9-12months_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63888180350D700D7621B /* vaccinationchart_9-13years_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_9-13years_button_red-01.png"; sourceTree = "<group>"; };
+		E3F63889180350D700D7621B /* vaccinationchart_birth_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_birth_button_red-01.png"; sourceTree = "<group>"; };
+		E3F6388A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinatonchart_10wks_button_red-01.png"; sourceTree = "<group>"; };
+		E3F6388B180350D700D7621B /* vaccinationchart_10wks_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_10wks_button-01.png"; sourceTree = "<group>"; };
+		E3F6388C180350D700D7621B /* vaccinationchart_14wks_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_14wks_button-01.png"; sourceTree = "<group>"; };
+		E3F6388D180350D700D7621B /* vaccinationchart_15-18months_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_15-18months_button-01.png"; sourceTree = "<group>"; };
+		E3F6388E180350D700D7621B /* vaccinationchart_2-5years_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_2-5years_button-01.png"; sourceTree = "<group>"; };
+		E3F6388F180350D700D7621B /* vaccinationchart_6wks_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_6wks_button-01.png"; sourceTree = "<group>"; };
+		E3F63890180350D700D7621B /* vaccinationchart_9-12months_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_9-12months_button.png"; sourceTree = "<group>"; };
+		E3F63891180350D700D7621B /* vaccinationchart_9-13years_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_9-13years_button-01.png"; sourceTree = "<group>"; };
+		E3F63892180350D700D7621B /* vaccinationchart_birth_button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaccinationchart_birth_button-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +200,12 @@
 		E3F6382818032CD400D7621B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3F63881180350D700D7621B /* vaccinatin chart */,
+				E3F6386A18034D5D00D7621B /* navigation */,
+				E3F6386818034CDA00D7621B /* home_nurse-01.png */,
+				E3F638621803487B00D7621B /* patientinfo_profilepic_icon-01.png */,
+				E3F638631803487B00D7621B /* patientinfo_updateinfo_button-01.png */,
+				E3F638641803487B00D7621B /* patientinfo_uploadpic_icon-01.png */,
 				E3F63860180338D000D7621B /* search_search_button-01.png */,
 				E3F6385C180335A300D7621B /* home_addpatient_button-01.png */,
 				E3F6385D180335A300D7621B /* home_search_button-01.png */,
@@ -168,6 +236,55 @@
 				E3F6384918032CD400D7621B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3F6386A18034D5D00D7621B /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E3F6386B18034D5D00D7621B /* navigation_camera_button-01.png */,
+				E3F6386C18034D5D00D7621B /* navigation_healthhistory_button-01.png */,
+				E3F6386D18034D5D00D7621B /* navigation_highlight_healthhistory_button-01.png */,
+				E3F6386E18034D5D00D7621B /* navigation_highlight_vaccinationchart_button-01.png */,
+				E3F6386F18034D5D00D7621B /* navigation_logobar-01.png */,
+				E3F6387018034D5D00D7621B /* navigation_logout_button-01-01.png */,
+				E3F6387118034D5D00D7621B /* navigation_logout_button-01.png */,
+				E3F6387218034D5D00D7621B /* navigation_redbar-01.png */,
+				E3F6387318034D5D00D7621B /* navigation_slider-01.png */,
+				E3F6387418034D5D00D7621B /* navigation_vaccinationchart_button-01-01.png */,
+				E3F6387518034D5D00D7621B /* navigation_vaccinationchart_button-01.png */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		E3F63881180350D700D7621B /* vaccinatin chart */ = {
+			isa = PBXGroup;
+			children = (
+				E3F63882180350D700D7621B /* red */,
+				E3F6388B180350D700D7621B /* vaccinationchart_10wks_button-01.png */,
+				E3F6388C180350D700D7621B /* vaccinationchart_14wks_button-01.png */,
+				E3F6388D180350D700D7621B /* vaccinationchart_15-18months_button-01.png */,
+				E3F6388E180350D700D7621B /* vaccinationchart_2-5years_button-01.png */,
+				E3F6388F180350D700D7621B /* vaccinationchart_6wks_button-01.png */,
+				E3F63890180350D700D7621B /* vaccinationchart_9-12months_button.png */,
+				E3F63891180350D700D7621B /* vaccinationchart_9-13years_button-01.png */,
+				E3F63892180350D700D7621B /* vaccinationchart_birth_button-01.png */,
+			);
+			path = "vaccinatin chart";
+			sourceTree = "<group>";
+		};
+		E3F63882180350D700D7621B /* red */ = {
+			isa = PBXGroup;
+			children = (
+				E3F63883180350D700D7621B /* vaccinationchart_14wks_button_red-01.png */,
+				E3F63884180350D700D7621B /* vaccinationchart_15-18months_button_red-01.png */,
+				E3F63885180350D700D7621B /* vaccinationchart_2-5years_button_red-01.png */,
+				E3F63886180350D700D7621B /* vaccinationchart_6wks_button_red-01.png */,
+				E3F63887180350D700D7621B /* vaccinationchart_9-12months_button_red-01.png */,
+				E3F63888180350D700D7621B /* vaccinationchart_9-13years_button_red-01.png */,
+				E3F63889180350D700D7621B /* vaccinationchart_birth_button_red-01.png */,
+				E3F6388A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png */,
+			);
+			path = red;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,14 +363,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F6387C18034D5D00D7621B /* navigation_logout_button-01.png in Resources */,
+				E3F638A2180350D700D7621B /* vaccinationchart_birth_button-01.png in Resources */,
+				E3F6387F18034D5D00D7621B /* navigation_vaccinationchart_button-01-01.png in Resources */,
+				E3F638A0180350D700D7621B /* vaccinationchart_9-12months_button.png in Resources */,
+				E3F6389C180350D700D7621B /* vaccinationchart_14wks_button-01.png in Resources */,
 				E3F6385E180335A300D7621B /* home_addpatient_button-01.png in Resources */,
+				E3F6387618034D5D00D7621B /* navigation_camera_button-01.png in Resources */,
+				E3F6389B180350D700D7621B /* vaccinationchart_10wks_button-01.png in Resources */,
+				E3F6387918034D5D00D7621B /* navigation_highlight_vaccinationchart_button-01.png in Resources */,
+				E3F638671803487B00D7621B /* patientinfo_uploadpic_icon-01.png in Resources */,
+				E3F6387D18034D5D00D7621B /* navigation_redbar-01.png in Resources */,
 				E3F6383A18032CD400D7621B /* Images.xcassets in Resources */,
+				E3F6387A18034D5D00D7621B /* navigation_logobar-01.png in Resources */,
 				E3F6382C18032CD400D7621B /* InfoPlist.strings in Resources */,
+				E3F6389A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png in Resources */,
 				E3F6385F180335A300D7621B /* home_search_button-01.png in Resources */,
 				E3F6385718032E0600D7621B /* background-01.png in Resources */,
+				E3F63896180350D700D7621B /* vaccinationchart_6wks_button_red-01.png in Resources */,
+				E3F638661803487B00D7621B /* patientinfo_updateinfo_button-01.png in Resources */,
 				E3F6385B1803316900D7621B /* login_logo-01.png in Resources */,
+				E3F6389F180350D700D7621B /* vaccinationchart_6wks_button-01.png in Resources */,
+				E3F63893180350D700D7621B /* vaccinationchart_14wks_button_red-01.png in Resources */,
+				E3F6387B18034D5D00D7621B /* navigation_logout_button-01-01.png in Resources */,
+				E3F6387718034D5D00D7621B /* navigation_healthhistory_button-01.png in Resources */,
+				E3F6387E18034D5D00D7621B /* navigation_slider-01.png in Resources */,
+				E3F63895180350D700D7621B /* vaccinationchart_2-5years_button_red-01.png in Resources */,
+				E3F6387818034D5D00D7621B /* navigation_highlight_healthhistory_button-01.png in Resources */,
 				E3F6383518032CD400D7621B /* Main.storyboard in Resources */,
 				E3F63861180338D000D7621B /* search_search_button-01.png in Resources */,
+				E3F63897180350D700D7621B /* vaccinationchart_9-12months_button_red-01.png in Resources */,
+				E3F638A1180350D700D7621B /* vaccinationchart_9-13years_button-01.png in Resources */,
+				E3F6389E180350D700D7621B /* vaccinationchart_2-5years_button-01.png in Resources */,
+				E3F63894180350D700D7621B /* vaccinationchart_15-18months_button_red-01.png in Resources */,
+				E3F638651803487B00D7621B /* patientinfo_profilepic_icon-01.png in Resources */,
+				E3F63898180350D700D7621B /* vaccinationchart_9-13years_button_red-01.png in Resources */,
+				E3F63899180350D700D7621B /* vaccinationchart_birth_button_red-01.png in Resources */,
+				E3F6388018034D5D00D7621B /* navigation_vaccinationchart_button-01.png in Resources */,
+				E3F6386918034CDA00D7621B /* home_nurse-01.png in Resources */,
+				E3F6389D180350D700D7621B /* vaccinationchart_15-18months_button-01.png in Resources */,
 				E3F6385A1803316900D7621B /* login_login_button-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
