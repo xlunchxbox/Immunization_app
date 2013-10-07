@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E384875418035A0F006FC744 /* search_profilepic_icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E384875318035A0F006FC744 /* search_profilepic_icon-01.png */; };
 		E3F6382218032CD400D7621B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F6382118032CD400D7621B /* Foundation.framework */; };
 		E3F6382418032CD400D7621B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F6382318032CD400D7621B /* CoreGraphics.framework */; };
 		E3F6382618032CD400D7621B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F6382518032CD400D7621B /* UIKit.framework */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E384875318035A0F006FC744 /* search_profilepic_icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_profilepic_icon-01.png"; sourceTree = "<group>"; };
 		E3F6381E18032CD400D7621B /* immunization_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = immunization_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F6382118032CD400D7621B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E3F6382318032CD400D7621B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +155,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E384874F18035964006FC744 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E3F6385C180335A300D7621B /* home_addpatient_button-01.png */,
+				E3F6385D180335A300D7621B /* home_search_button-01.png */,
+				E3F6386818034CDA00D7621B /* home_nurse-01.png */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		E384875018035999006FC744 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				E3F638581803316900D7621B /* login_login_button-01.png */,
+				E3F638591803316900D7621B /* login_logo-01.png */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		E3848751180359E5006FC744 /* patient info */ = {
+			isa = PBXGroup;
+			children = (
+				E3F638621803487B00D7621B /* patientinfo_profilepic_icon-01.png */,
+				E3F638631803487B00D7621B /* patientinfo_updateinfo_button-01.png */,
+				E3F638641803487B00D7621B /* patientinfo_uploadpic_icon-01.png */,
+			);
+			name = "patient info";
+			sourceTree = "<group>";
+		};
+		E3848752180359FD006FC744 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				E3F63860180338D000D7621B /* search_search_button-01.png */,
+				E384875318035A0F006FC744 /* search_profilepic_icon-01.png */,
+			);
+			name = search;
+			sourceTree = "<group>";
+		};
 		E3F6381518032CD400D7621B = {
 			isa = PBXGroup;
 			children = (
@@ -200,17 +240,12 @@
 		E3F6382818032CD400D7621B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3848752180359FD006FC744 /* search */,
+				E3848751180359E5006FC744 /* patient info */,
+				E384875018035999006FC744 /* login */,
+				E384874F18035964006FC744 /* home */,
 				E3F63881180350D700D7621B /* vaccinatin chart */,
 				E3F6386A18034D5D00D7621B /* navigation */,
-				E3F6386818034CDA00D7621B /* home_nurse-01.png */,
-				E3F638621803487B00D7621B /* patientinfo_profilepic_icon-01.png */,
-				E3F638631803487B00D7621B /* patientinfo_updateinfo_button-01.png */,
-				E3F638641803487B00D7621B /* patientinfo_uploadpic_icon-01.png */,
-				E3F63860180338D000D7621B /* search_search_button-01.png */,
-				E3F6385C180335A300D7621B /* home_addpatient_button-01.png */,
-				E3F6385D180335A300D7621B /* home_search_button-01.png */,
-				E3F638581803316900D7621B /* login_login_button-01.png */,
-				E3F638591803316900D7621B /* login_logo-01.png */,
 				E3F6385618032E0600D7621B /* background-01.png */,
 				E3F6382918032CD400D7621B /* immunization_app-Info.plist */,
 				E3F6382A18032CD400D7621B /* InfoPlist.strings */,
@@ -378,6 +413,7 @@
 				E3F6387A18034D5D00D7621B /* navigation_logobar-01.png in Resources */,
 				E3F6382C18032CD400D7621B /* InfoPlist.strings in Resources */,
 				E3F6389A180350D700D7621B /* vaccinatonchart_10wks_button_red-01.png in Resources */,
+				E384875418035A0F006FC744 /* search_profilepic_icon-01.png in Resources */,
 				E3F6385F180335A300D7621B /* home_search_button-01.png in Resources */,
 				E3F6385718032E0600D7621B /* background-01.png in Resources */,
 				E3F63896180350D700D7621B /* vaccinationchart_6wks_button_red-01.png in Resources */,
@@ -634,6 +670,7 @@
 				E3F6385218032CD400D7621B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3F6385318032CD400D7621B /* Build configuration list for PBXNativeTarget "immunization_appTests" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +679,7 @@
 				E3F6385518032CD400D7621B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

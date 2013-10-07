@@ -711,30 +711,11 @@
         <image name="login_login_button-01.png" width="838" height="271"/>
         <image name="login_logo-01.png" width="2937" height="421"/>
         <image name="navigation_camera_button-01.png" width="606" height="656"/>
-        <image name="navigation_camera_button-01.png" width="606" height="656"/>
-        <image name="navigation_healthhistory_button-01.png" width="606" height="656"/>
         <image name="navigation_healthhistory_button-01.png" width="606" height="656"/>
         <image name="navigation_highlight_vaccinationchart_button-01.png" width="606" height="656"/>
-        <image name="navigation_highlight_vaccinationchart_button-01.png" width="606" height="656"/>
-        <image name="navigation_logobar-01.png" width="4362" height="694"/>
-        <image name="navigation_logobar-01.png" width="4362" height="694"/>
-        <image name="navigation_logobar-01.png" width="4362" height="694"/>
-        <image name="navigation_logobar-01.png" width="4362" height="694"/>
         <image name="navigation_logobar-01.png" width="4362" height="694"/>
         <image name="navigation_logout_button-01-01.png" width="606" height="656"/>
-        <image name="navigation_logout_button-01-01.png" width="606" height="656"/>
-        <image name="navigation_logout_button-01-01.png" width="606" height="656"/>
-        <image name="navigation_logout_button-01-01.png" width="606" height="656"/>
-        <image name="navigation_logout_button-01-01.png" width="606" height="656"/>
         <image name="navigation_redbar-01.png" width="156" height="637"/>
-        <image name="navigation_redbar-01.png" width="156" height="637"/>
-        <image name="navigation_redbar-01.png" width="156" height="637"/>
-        <image name="navigation_redbar-01.png" width="156" height="637"/>
-        <image name="navigation_redbar-01.png" width="156" height="637"/>
-        <image name="navigation_slider-01.png" width="231" height="637"/>
-        <image name="navigation_slider-01.png" width="231" height="637"/>
-        <image name="navigation_slider-01.png" width="231" height="637"/>
-        <image name="navigation_slider-01.png" width="231" height="637"/>
         <image name="navigation_slider-01.png" width="231" height="637"/>
         <image name="patientinfo_profilepic_icon-01.png" width="1012" height="1094"/>
         <image name="patientinfo_updateinfo_button-01.png" width="1075" height="350"/>
@@ -754,6 +735,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Zy9-rv-wu3"/>
+        <segue reference="E86-TY-VJY"/>
     </inferredMetricsTieBreakers>
 </document>
