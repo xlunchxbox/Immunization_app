@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="-557"/>
+            <point key="canvasLocation" x="-2418" y="-1461"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xPw-JS-TOc">
@@ -296,12 +296,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9U-nL-dsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="815"/>
+            <point key="canvasLocation" x="-2338" y="2199"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="raj-F1-ISv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oY3-gq-Q67" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ubz-Cm-aCm" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RL0-1U-6rO"/>
@@ -360,6 +359,7 @@
                                 <state key="normal" image="birth_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="birth_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHr-8B-HzX">
                                 <rect key="frame" x="64" y="320" width="96" height="100"/>
@@ -367,6 +367,7 @@
                                 <state key="normal" image="10_weeks_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="10_weeks_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBm-Dm-z21">
                                 <rect key="frame" x="64" y="428" width="96" height="100"/>
@@ -374,6 +375,7 @@
                                 <state key="normal" image="9_12_months_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="9_12_months_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-4w-gSv">
                                 <rect key="frame" x="64" y="536" width="96" height="100"/>
@@ -381,6 +383,7 @@
                                 <state key="normal" image="2_5_years_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="2_5_years_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud9-eg-7w9">
                                 <rect key="frame" x="168" y="212" width="96" height="100"/>
@@ -388,6 +391,7 @@
                                 <state key="normal" image="6_weeks_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="6_weeks_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbB-rD-dDh">
                                 <rect key="frame" x="168" y="320" width="96" height="100"/>
@@ -395,6 +399,7 @@
                                 <state key="normal" image="14_weeks_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="14_weeks_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5b-bo-ibN">
                                 <rect key="frame" x="168" y="428" width="96" height="100"/>
@@ -402,6 +407,7 @@
                                 <state key="normal" image="15_18_months_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="15_18_months_btn_red.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eez-Lj-cY2">
                                 <rect key="frame" x="168" y="536" width="96" height="100"/>
@@ -409,6 +415,7 @@
                                 <state key="normal" image="9_13_years_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="9_13_years_btn_red.png"/>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vaccination Chart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28O-EY-oaQ">
                                 <rect key="frame" x="64" y="164" width="183" height="40"/>
@@ -423,8 +430,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oY3-gq-Q67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="815"/>
+            <point key="canvasLocation" x="1537" y="2143"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TQD-Zb-YU8">
@@ -497,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbm-pK-5W3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="-554"/>
+            <point key="canvasLocation" x="77" y="-1434"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aSU-YM-bWG">
@@ -624,25 +632,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuo-iO-dqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-557"/>
+            <point key="canvasLocation" x="2222" y="3"/>
         </scene>
     </scenes>
     <resources>
         <image name="10_weeks_btn.png" width="96" height="100"/>
+        <image name="10_weeks_btn_red.png" width="96" height="100"/>
         <image name="14_weeks_btn.png" width="96" height="100"/>
+        <image name="14_weeks_btn_red.png" width="96" height="100"/>
         <image name="15_18_months_btn.png" width="96" height="100"/>
+        <image name="15_18_months_btn_red.png" width="96" height="100"/>
         <image name="2_5_years_btn.png" width="96" height="100"/>
+        <image name="2_5_years_btn_red.png" width="96" height="100"/>
         <image name="6_weeks_btn.png" width="96" height="100"/>
+        <image name="6_weeks_btn_red.png" width="96" height="100"/>
         <image name="9_12_months_btn.png" width="96" height="100"/>
+        <image name="9_12_months_btn_red.png" width="96" height="100"/>
         <image name="9_13_years_btn.png" width="96" height="100"/>
+        <image name="9_13_years_btn_red.png" width="96" height="100"/>
         <image name="birth_btn.png" width="96" height="100"/>
+        <image name="birth_btn_red.png" width="96" height="100"/>
         <image name="health_history_btn.png" width="120" height="137"/>
+        <image name="health_history_btn.png" width="120" height="137"/>
+        <image name="line_image.png" width="150" height="6"/>
         <image name="line_image.png" width="150" height="6"/>
         <image name="login_btn.png" width="189" height="55"/>
         <image name="login_page_logo.png" width="679" height="81"/>
         <image name="logout_btn.png" width="120" height="137"/>
+        <image name="logout_btn.png" width="120" height="137"/>
+        <image name="logout_btn.png" width="120" height="137"/>
+        <image name="logout_btn.png" width="120" height="137"/>
+        <image name="nav_logo.png" width="308" height="71"/>
+        <image name="nav_logo.png" width="308" height="71"/>
+        <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_outer_arrow.png" width="34" height="136"/>
+        <image name="nav_outer_arrow.png" width="34" height="136"/>
+        <image name="nav_outer_arrow.png" width="34" height="136"/>
+        <image name="nav_outer_arrow.png" width="34" height="136"/>
+        <image name="nav_outer_border.png" width="8" height="137"/>
+        <image name="nav_outer_border.png" width="8" height="137"/>
+        <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nurse_image.png" width="283" height="463"/>
         <image name="profile_image.png" width="220" height="242"/>
@@ -650,6 +680,8 @@
         <image name="search_profile_btn.png" width="346" height="64"/>
         <image name="update_info_btn.png" width="235" height="62"/>
         <image name="upload_vacc_btn.png" width="120" height="137"/>
+        <image name="upload_vacc_btn.png" width="120" height="137"/>
+        <image name="vaccination_chart_btn.png" width="120" height="137"/>
         <image name="vaccination_chart_btn.png" width="120" height="137"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -658,7 +690,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wWM-g8-BGz"/>
         <segue reference="Yr8-wg-tLh"/>
+        <segue reference="8RE-wB-q3v"/>
     </inferredMetricsTieBreakers>
 </document>
