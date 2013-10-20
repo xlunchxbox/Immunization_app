@@ -1,5 +1,8 @@
 "use strict";
 
+// test with curl --data "user=test&password=test" -b ./cookies.txt -c ./cookies.txt localhost:3000/login
+// curl -b ./cookies.txt -c ./cookies.txt  localhost:3000/patients
+
 exports.Server = function () {
 
   var express = require('express'),
