@@ -1,12 +1,13 @@
 "use strict";
 
-// test with curl --data "user=test&password=test" -b ./cookies.txt -c ./cookies.txt localhost:3000/login
+// test post with:
+// curl --data "user=test&password=test" -b ./cookies.txt -c ./cookies.txt localhost:3000/login
 // curl -b ./cookies.txt -c ./cookies.txt  localhost:3000/patients
 
 exports.Server = function () {
 
-  var express = require('express'),
-      patientsLib = require('./routes/patients');
+  var express = require('express');
+  var patientsLib = require('./routes/patients');
 
   var app = express();
   var patients = new patientsLib.Patients();
@@ -15,14 +16,16 @@ exports.Server = function () {
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
     app.use(express.cookieParser());
-    app.use(express.session({secret: 'PATIENTRECORDS'}));
+    app.use(express.session({secret: 'PATIENTRECORDS2'}));
   });
+
+  patients.initDB();
 
   app.post('/login', patients.login);
   app.post('/logout', patients.logout);
 
-  app.get('/patients', patients.checkAuth, patients.findAll);
-  app.get('/patients/:id', patients.checkAuth, patients.findById);
+  app.get('/patients', patients.checkAuth, patients.findAllPatients);
+  app.get('/patients/:id', patients.checkAuth, patients.findPatientById);
   app.post('/patients', patients.checkAuth, patients.addPatient);
   app.put('/patients/:id', patients.checkAuth, patients.updatePatient);
   app.delete('/patients/:id', patients.checkAuth, patients.deletePatient);
@@ -31,7 +34,5 @@ exports.Server = function () {
   console.log('Listening on port 3000...');
 
 };
-
-
 
 var testServer = new exports.Server();
