@@ -1,47 +1,56 @@
 "use strict";
 
-var mongo = require('mongodb');
+exports.Patients = function() {
+  var MongoLib,
+    MongoServer,
+    MongoDB,
+    BSON,
+    server,
+    db;
 
-var Server = mongo.Server,
-  Db = mongo.Db,
-  BSON = mongo.BSONPure;
+  this.initDB = function() {
+    MongoLib = require('mongodb');
 
-var server = new Server('localhost', 27017, {
-  auto_reconnect: true
-});
+    MongoServer = MongoLib.Server;
+    MongoDB = MongoLib.Db;
+    BSON = MongoLib.BSONPure;
 
-var db = new Db('patientdb', server, {
-  safe: true
-});
+    server = new MongoServer('localhost', 27017, {
+      auto_reconnect: true
+    });
 
-db.open(function(err, db) {
-  if (!err) {
-    console.log("Connected to 'patientdb' database");
-    db.collection('patients', {
-      strict: true
-    }, function(err, collection) {
-      if (err) {
-        console.log("The 'patients' collection doesn't exist. Creating it with sample data...");
-        populateDB();
+    db = new MongoDB('patientdb', server, {
+      safe: true
+    });
+
+    db.open(function(err, db) {
+      if (!err) {
+        console.log("Connected to 'patientdb' database");
+        db.collection('patients', {
+          strict: true
+        }, function(err, collection) {
+          if (err) {
+            console.log("The 'patients' collection doesn't exist. Creating it with sample data...");
+            populateDB();
+          }
+        });
       }
     });
-  }
-});
-
-exports.Patients = function() {
+  };
 
   this.login = function(req, res) {
     var post = req.body;
-    if (post && post.user && post.password) {
-      //console.log("Username: " + post.user + ", Password: " + post.password);
-      if (authenticateUser(post.user, post.password)) {
-        req.session.user_id = post.user;
+    console.log(post);
+    if (post && post.username && post.password) {
+      console.log("Username: " + post.username + ", Password: " + post.password);
+      if (authenticateUser(post.username, post.password)) {
+        req.session.user_id = post.username;
         res.send('{status: "success"}');
       } else {
         res.send('{status: "failure"}');
       }
     } else {
-      res.send('{status: "failure"}');
+      res.send('{status: "failure", errorMsg: "Problem with Post"}');
     }
   };
 
@@ -50,7 +59,7 @@ exports.Patients = function() {
     res.send('{status: "success"}');
   };
 
-  this.findAll = function(req, res) {
+  this.findAllPatients = function(req, res) {
     db.collection('patients', function(err, collection) {
       collection.find().toArray(function(err, items) {
         res.send(items);
@@ -58,7 +67,7 @@ exports.Patients = function() {
     });
   };
 
-  this.findById = function(req, res) {
+  this.findPatientById = function(req, res) {
     var id = req.params.id;
     console.log('Retrieving Patient Record for ID: ' + id);
     db.collection('patients', function(err, collection) {
@@ -146,6 +155,7 @@ exports.Patients = function() {
   };
 
   var authenticateUser = function(username, password) {
+    console.log('' + username + " " + password);
     for (var user in authenticatedUsers) {
       if (authenticatedUsers[user].username === username && authenticatedUsers[user].password === password)
         return true;
