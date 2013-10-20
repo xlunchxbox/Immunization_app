@@ -11,13 +11,18 @@ exports.Server = function () {
   app.configure(function () {
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
+    app.use(express.cookieParser());
+    app.use(express.session({secret: 'PATIENTRECORDS'}));
   });
 
-  app.get('/patients', patients.findAll);
-  app.get('/patients/:id', patients.findById);
-  app.post('/patients', patients.addPatient);
-  app.put('/patients/:id', patients.updatePatient);
-  app.delete('/patients/:id', patients.deletePatient);
+  app.post('/login', patients.login);
+  app.post('/logout', patients.logout);
+
+  app.get('/patients', patients.checkAuth, patients.findAll);
+  app.get('/patients/:id', patients.checkAuth, patients.findById);
+  app.post('/patients', patients.checkAuth, patients.addPatient);
+  app.put('/patients/:id', patients.checkAuth, patients.updatePatient);
+  app.delete('/patients/:id', patients.checkAuth, patients.deletePatient);
 
   app.listen(3000);
   console.log('Listening on port 3000...');
