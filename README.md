@@ -13,7 +13,7 @@ __/login__
 __/logout__
 * _Post_:
    * Req: <none>
-   * Res: JSON object with status field, ex. {status: "success"},
+   * Res: JSON object with status field, ex. {status: "success"}
 
 __/patients__
 * _Get_, get all patients:
