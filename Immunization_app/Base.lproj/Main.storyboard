@@ -942,24 +942,6 @@
             </objects>
             <point key="canvasLocation" x="-26" y="-2188"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="b2Z-Qe-jzP">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vt0-tX-ebT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UlD-jA-QPA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dyt-RM-mkC"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="duV-jF-RO1">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hdU-0g-bPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="10_weeks_btn.png" width="96" height="100"/>
