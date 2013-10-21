@@ -65,7 +65,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kcv-jY-1Qp" kind="modal" id="RqY-rg-bfH"/>
+                                    <segue destination="kcv-jY-1Qp" kind="modal" id="hOj-7q-27i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -358,7 +358,7 @@
                         <outlet property="city" destination="UVn-JO-7Oy" id="FFt-s2-SCD"/>
                         <outlet property="country" destination="mqL-DU-7J3" id="QLh-DL-qoB"/>
                         <outlet property="dateOfBirth" destination="nGk-CP-tJK" id="f6O-q7-OVr"/>
-                        <outlet property="email" destination="yva-tU-wpe" id="Frx-l3-Ddw"/>
+                        <outlet property="email" destination="yva-tU-wpe" id="3Ee-JV-Qoh"/>
                         <outlet property="firstName" destination="zEe-Qz-ot5" id="zW1-TL-Npe"/>
                         <outlet property="gender" destination="CIv-le-5lt" id="XRm-8I-VB9"/>
                         <outlet property="lastName" destination="cWa-9k-Hes" id="uz7-dQ-dB8"/>
@@ -373,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9U-nL-dsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5674" y="1407"/>
+            <point key="canvasLocation" x="-6482" y="-1289"/>
         </scene>
         <!--Immunization View Controller-->
         <scene sceneID="raj-F1-ISv">
@@ -1043,11 +1043,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8EJ-cE-37g"/>
-        <segue reference="S3f-77-VUj"/>
-        <segue reference="J2O-XD-KjQ"/>
-        <segue reference="pwq-UA-f1t"/>
-        <segue reference="Xjm-rn-bWu"/>
-        <segue reference="A8B-SG-7ZX"/>
+        <segue reference="Qcw-wE-hhf"/>
+        <segue reference="hOj-7q-27i"/>
+        <segue reference="DlZ-m5-dmW"/>
+        <segue reference="G0T-mo-JzH"/>
+        <segue reference="9SK-qd-XXq"/>
+        <segue reference="371-UD-eMu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *state;
 @property (weak, nonatomic) IBOutlet UITextField *zip;
 @property (weak, nonatomic) IBOutlet UITextField *country;
+@property (weak, nonatomic) IBOutlet UITextField *email;
 
 - (IBAction)updateInfoBtn:(id)sender;
 - (IBAction)vaccinationBtn:(id)sender;
