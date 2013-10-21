@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Team7. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad
 {
