@@ -6,14 +6,16 @@ var patientsTestModule = require("../src/routes/patients");
 buster.testCase("patient unit tests", {
 
   setUp: function () {
-    this.patients = new patientsTestModule.patients(100);
+    this.patients = new patientsTestModule.Patients();
+    this.patients.initDB();
   },
 
-  "Test: Buster Canary" : function () {
+  "Test: Buster Canary": function () {
     buster.assert(true);
+  },
+
+  tearDown: function() {
+    //this.patients.closeDB();
   }
-
-
-
 
 });
