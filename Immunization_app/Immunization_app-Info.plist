@@ -30,6 +30,14 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden~ipad</key>
+	<false/>
+	<key>UILaunchImageFile</key>
+	<string>Default</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
