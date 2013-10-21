@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *year;
 @property (weak, nonatomic) IBOutlet UITextField *userId;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextField *activeField;
+
+
 
 
 - (IBAction)searchBtn:(id)sender;

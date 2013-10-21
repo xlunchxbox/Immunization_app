@@ -24,6 +24,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *country;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextField *activeField;
+
+
 - (IBAction)updateInfoBtn:(id)sender;
 - (IBAction)vaccinationBtn:(id)sender;
 - (IBAction)medicalHistory:(id)sender;
