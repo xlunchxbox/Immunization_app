@@ -66,6 +66,7 @@
 		E3C940C7181580DB00B4ABA8 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C940C6181580DB00B4ABA8 /* ProfileViewController.m */; };
 		E3C940CA1815810800B4ABA8 /* ImmunizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C940C91815810800B4ABA8 /* ImmunizationViewController.m */; };
 		E3C940CD1815812F00B4ABA8 /* MedicalHIstoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C940CC1815812F00B4ABA8 /* MedicalHIstoryViewController.m */; };
+		E3C940D01815982900B4ABA8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C940CF1815982900B4ABA8 /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,8 @@
 		E3C940C91815810800B4ABA8 /* ImmunizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImmunizationViewController.m; sourceTree = "<group>"; };
 		E3C940CB1815812F00B4ABA8 /* MedicalHIstoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalHIstoryViewController.h; sourceTree = "<group>"; };
 		E3C940CC1815812F00B4ABA8 /* MedicalHIstoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalHIstoryViewController.m; sourceTree = "<group>"; };
+		E3C940CE1815982900B4ABA8 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		E3C940CF1815982900B4ABA8 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				E3C940C01815807F00B4ABA8 /* WelcomeViewController.m */,
 				E3B5AC5A18101E7400711A1A /* LoginViewController.h */,
 				E3B5AC5B18101E7400711A1A /* LoginViewController.m */,
+				E3C940CE1815982900B4ABA8 /* CameraViewController.h */,
+				E3C940CF1815982900B4ABA8 /* CameraViewController.m */,
 				E3B5AC5D18101E7400711A1A /* Images.xcassets */,
 				E3B5AC4C18101E7400711A1A /* Supporting Files */,
 			);
@@ -496,6 +501,7 @@
 				E3C940C11815807F00B4ABA8 /* WelcomeViewController.m in Sources */,
 				E3C940C4181580C000B4ABA8 /* SearchViewController.m in Sources */,
 				E3B5AC5618101E7400711A1A /* AppDelegate.m in Sources */,
+				E3C940D01815982900B4ABA8 /* CameraViewController.m in Sources */,
 				E3C940C7181580DB00B4ABA8 /* ProfileViewController.m in Sources */,
 				E3B5AC5218101E7400711A1A /* main.m in Sources */,
 			);

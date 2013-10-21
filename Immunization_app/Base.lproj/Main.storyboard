@@ -143,6 +143,7 @@
                                 </state>
                                 <connections>
                                     <action selector="uploadPhotoBtn:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="kAy-fP-Kvb"/>
+                                    <segue destination="gWZ-fi-D42" kind="modal" id="371-UD-eMu"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_image_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rac-E7-U5I">
@@ -424,6 +425,7 @@
                                 </state>
                                 <connections>
                                     <action selector="uploadPhotoBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="3PM-lh-FkP"/>
+                                    <segue destination="gWZ-fi-D42" kind="modal" id="VJc-37-fMN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-Zq-xP5">
@@ -543,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oY3-gq-Q67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2727" y="1433"/>
+            <point key="canvasLocation" x="-3727" y="1393"/>
         </scene>
         <!--MedicalH Istory View Controller-->
         <scene sceneID="5oB-hw-En8">
@@ -591,6 +593,7 @@
                                 </state>
                                 <connections>
                                     <action selector="uploadPhotoBtn:" destination="ghJ-dU-bTE" eventType="touchUpInside" id="Wn2-YH-TtU"/>
+                                    <segue destination="gWZ-fi-D42" kind="modal" id="S3f-77-VUj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y9u-G0-VUE">
@@ -697,7 +700,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjh-Y1-5Bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="1542"/>
+            <point key="canvasLocation" x="-1572" y="1393"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="1tK-LA-RyK">
+            <objects>
+                <viewController id="gWZ-fi-D42" customClass="CameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rZL-nI-28U"/>
+                        <viewControllerLayoutGuide type="bottom" id="50A-JZ-8FL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SkB-5S-u6k">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe3-wy-Kp4">
+                                <rect key="frame" x="449" y="414" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TEST BUTTON, GOES HOME">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="8EJ-cE-37g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52291920010000004" green="0.96975473850000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO8-qz-y07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3703" y="3349"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="TQD-Zb-YU8">
@@ -1008,7 +1043,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GG2-Iw-TwR"/>
+        <segue reference="8EJ-cE-37g"/>
+        <segue reference="S3f-77-VUj"/>
         <segue reference="J2O-XD-KjQ"/>
         <segue reference="pwq-UA-f1t"/>
         <segue reference="Xjm-rn-bWu"/>
