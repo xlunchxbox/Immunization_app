@@ -210,7 +210,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiS-Hq-YGc">
-                                <rect key="frame" x="460" y="225" width="420" height="498"/>
+                                <rect key="frame" x="460" y="225" width="537" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpL-BO-YKB">
@@ -266,7 +266,7 @@
                                         <rect key="frame" x="20" y="199" width="380" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234 Penny Lane" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-ew-4gO">
                                         <rect key="frame" x="20" y="290" width="380" height="30"/>
@@ -284,7 +284,7 @@
                                         <rect key="frame" x="315" y="368" width="85" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-lf-Cuf">
                                         <rect key="frame" x="222" y="368" width="85" height="30"/>
@@ -861,7 +861,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-eI-ZNn">
-                                <rect key="frame" x="20" y="194" width="386" height="523"/>
+                                <rect key="frame" x="20" y="194" width="428" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for Patient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqP-vi-hI3">
@@ -940,7 +940,7 @@
                                         <rect key="frame" x="20" y="392" width="346" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U35-hm-CAX">
                                         <rect key="frame" x="20" y="439" width="346" height="64"/>
@@ -1006,35 +1006,13 @@
         <image name="birth_btn.png" width="96" height="100"/>
         <image name="birth_btn_red.png" width="96" height="100"/>
         <image name="line_image.png" width="150" height="6"/>
-        <image name="line_image.png" width="150" height="6"/>
         <image name="login_btn.png" width="189" height="55"/>
         <image name="login_page_logo.png" width="679" height="81"/>
         <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="medical_history.png" width="120" height="137"/>
         <image name="medical_history.png" width="120" height="137"/>
         <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nurse_image.png" width="283" height="463"/>
         <image name="profile_image_red.png" width="220" height="242"/>
@@ -1042,9 +1020,6 @@
         <image name="search_profile_btn.png" width="346" height="64"/>
         <image name="update_info_btn.png" width="235" height="62"/>
         <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="vaccination_chart_btn.png" width="120" height="137"/>
         <image name="vaccination_chart_btn.png" width="120" height="137"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1053,11 +1028,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="J2O-XD-KjQ"/>
-        <segue reference="pwq-UA-f1t"/>
-        <segue reference="S3f-77-VUj"/>
-        <segue reference="Xjm-rn-bWu"/>
-        <segue reference="8EJ-cE-37g"/>
-        <segue reference="A8B-SG-7ZX"/>
+        <segue reference="G0T-mo-JzH"/>
+        <segue reference="hOj-7q-27i"/>
+        <segue reference="uMt-ID-hjg"/>
+        <segue reference="hI9-f3-Kuj"/>
+        <segue reference="9SK-qd-XXq"/>
+        <segue reference="371-UD-eMu"/>
     </inferredMetricsTieBreakers>
 </document>
