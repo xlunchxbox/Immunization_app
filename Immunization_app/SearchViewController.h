@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+@property (weak, nonatomic) IBOutlet UITextField *month;
+@property (weak, nonatomic) IBOutlet UITextField *day;
+@property (weak, nonatomic) IBOutlet UITextField *year;
+@property (weak, nonatomic) IBOutlet UITextField *userId;
+
+
+
+- (IBAction)searchBtn:(id)sender;
+- (IBAction)logoutBtn:(id)sender;
 
 @end

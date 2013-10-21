@@ -9,5 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @interface ProfileViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
+@property (weak, nonatomic) IBOutlet UILabel *patientName;
+@property (weak, nonatomic) IBOutlet UILabel *patientId;
+@property (weak, nonatomic) IBOutlet UILabel *firstName;
+@property (weak, nonatomic) IBOutlet UILabel *lastName;
+@property (weak, nonatomic) IBOutlet UILabel *dateOfBirth;
+@property (weak, nonatomic) IBOutlet UILabel *gender;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *streetAddress;
+@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (weak, nonatomic) IBOutlet UITextField *state;
+@property (weak, nonatomic) IBOutlet UITextField *zip;
+@property (weak, nonatomic) IBOutlet UITextField *country;
 
+- (IBAction)updateInfoBtn:(id)sender;
+- (IBAction)vaccinationBtn:(id)sender;
+- (IBAction)medicalHistory:(id)sender;
+- (IBAction)uploadPhotoBtn:(id)sender;
+- (IBAction)logoutBtn:(id)sender;
 @end

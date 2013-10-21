@@ -10,4 +10,7 @@
 
 @interface WelcomeViewController : UIViewController
 
+- (IBAction)logoutBtn:(id)sender;
+
+
 @end

@@ -54,6 +54,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8XY-C2-qwN"/>
                                     <segue destination="s31-Ps-4FX" kind="modal" id="hI9-f3-Kuj"/>
                                 </connections>
                             </button>
@@ -72,6 +73,10 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="password" destination="AgM-Uw-h1g" id="AfY-MZ-Ocb"/>
+                        <outlet property="username" destination="vat-pz-Xcs" id="EE1-LN-63N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,6 +105,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logoutBtn:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="PWK-4M-7PR"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="Qcw-wE-hhf"/>
                                 </connections>
                             </button>
@@ -114,6 +120,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="vaccinationBtn:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="wgL-6U-hr3"/>
                                     <segue destination="Ubz-Cm-aCm" kind="modal" id="9SK-qd-XXq"/>
                                 </connections>
                             </button>
@@ -124,6 +131,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="medicalHistory:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="BTW-b2-S63"/>
                                     <segue destination="ghJ-dU-bTE" kind="modal" id="G0T-mo-JzH"/>
                                 </connections>
                             </button>
@@ -133,6 +141,9 @@
                                 <state key="normal" image="upload_vacc_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPhotoBtn:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="kAy-fP-Kvb"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_image_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rac-E7-U5I">
                                 <rect key="frame" x="64" y="188" width="220" height="242"/>
@@ -144,6 +155,9 @@
                                 <state key="normal" image="update_info_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateInfoBtn:" destination="kcv-jY-1Qp" eventType="touchUpInside" id="M8N-as-y8c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patient's Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XA-6d-N0f">
                                 <rect key="frame" x="64" y="438" width="143" height="40"/>
@@ -152,8 +166,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID #123456" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLA-UU-uD3">
-                                <rect key="frame" x="64" y="486" width="104" height="23"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLA-UU-uD3">
+                                <rect key="frame" x="64" y="486" width="37" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123456" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d1-lC-Gvk">
+                                <rect key="frame" x="140" y="484" width="67" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,6 +353,22 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="city" destination="UVn-JO-7Oy" id="FFt-s2-SCD"/>
+                        <outlet property="country" destination="mqL-DU-7J3" id="QLh-DL-qoB"/>
+                        <outlet property="dateOfBirth" destination="nGk-CP-tJK" id="f6O-q7-OVr"/>
+                        <outlet property="email" destination="yva-tU-wpe" id="Frx-l3-Ddw"/>
+                        <outlet property="firstName" destination="zEe-Qz-ot5" id="zW1-TL-Npe"/>
+                        <outlet property="gender" destination="CIv-le-5lt" id="XRm-8I-VB9"/>
+                        <outlet property="lastName" destination="cWa-9k-Hes" id="uz7-dQ-dB8"/>
+                        <outlet property="patientId" destination="5d1-lC-Gvk" id="lnS-sA-qC7"/>
+                        <outlet property="patientName" destination="8XA-6d-N0f" id="8NC-6a-4nK"/>
+                        <outlet property="phoneNumber" destination="giv-JI-eY1" id="ZSz-fB-uIi"/>
+                        <outlet property="profileImage" destination="Rac-E7-U5I" id="2ow-Qi-Yfb"/>
+                        <outlet property="state" destination="jLe-Ym-jrv" id="OgL-YD-dmi"/>
+                        <outlet property="streetAddress" destination="qEl-xP-cK5" id="NGD-Kg-5go"/>
+                        <outlet property="zip" destination="3m9-Sx-Ps3" id="w9R-mG-4ET"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9U-nL-dsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,6 +397,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logoutBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="CDe-gO-4Do"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="gfX-va-G90"/>
                                 </connections>
                             </button>
@@ -374,6 +412,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="medicalHistoryBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="1Te-kv-G4K"/>
                                     <segue destination="ghJ-dU-bTE" kind="modal" id="J2O-XD-KjQ"/>
                                 </connections>
                             </button>
@@ -383,6 +422,9 @@
                                 <state key="normal" image="upload_vacc_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPhotoBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="3PM-lh-FkP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-Zq-xP5">
                                 <rect key="frame" x="64" y="212" width="96" height="100"/>
@@ -391,6 +433,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="birth_btn_red.png"/>
+                                <connections>
+                                    <action selector="birthBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="XsY-hv-ssE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHr-8B-HzX">
                                 <rect key="frame" x="64" y="320" width="96" height="100"/>
@@ -399,6 +444,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="10_weeks_btn_red.png"/>
+                                <connections>
+                                    <action selector="tenWeeksBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="x9l-Qf-t8L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBm-Dm-z21">
                                 <rect key="frame" x="64" y="428" width="96" height="100"/>
@@ -407,6 +455,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="9_12_months_btn_red.png"/>
+                                <connections>
+                                    <action selector="nineToTwelveMonthsBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="Exw-fO-EKL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-4w-gSv">
                                 <rect key="frame" x="64" y="536" width="96" height="100"/>
@@ -415,6 +466,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="2_5_years_btn_red.png"/>
+                                <connections>
+                                    <action selector="twoToFiveYearsBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="cJm-2o-Chf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud9-eg-7w9">
                                 <rect key="frame" x="168" y="212" width="96" height="100"/>
@@ -423,6 +477,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="6_weeks_btn_red.png"/>
+                                <connections>
+                                    <action selector="sixWeeksBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="eNv-I8-Cvm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbB-rD-dDh">
                                 <rect key="frame" x="168" y="320" width="96" height="100"/>
@@ -431,6 +488,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="14_weeks_btn_red.png"/>
+                                <connections>
+                                    <action selector="fourteenWeeksBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="GbP-6r-NrN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5b-bo-ibN">
                                 <rect key="frame" x="168" y="428" width="96" height="100"/>
@@ -439,6 +499,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="15_18_months_btn_red.png"/>
+                                <connections>
+                                    <action selector="fifteenToEighteenMonthsBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="7dy-fe-0Vb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eez-Lj-cY2">
                                 <rect key="frame" x="168" y="536" width="96" height="100"/>
@@ -447,6 +510,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="9_13_years_btn_red.png"/>
+                                <connections>
+                                    <action selector="nineToThirteenYearsbtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="Q49-3J-gtk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vaccination Chart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28O-EY-oaQ">
                                 <rect key="frame" x="64" y="164" width="183" height="40"/>
@@ -502,6 +568,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logoutBtn:" destination="ghJ-dU-bTE" eventType="touchUpInside" id="y4r-hY-t68"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="GG2-Iw-TwR"/>
                                 </connections>
                             </button>
@@ -512,6 +579,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="vaccinationBtn:" destination="ghJ-dU-bTE" eventType="touchUpInside" id="biv-mB-zBv"/>
                                     <segue destination="Ubz-Cm-aCm" kind="modal" id="pwq-UA-f1t"/>
                                 </connections>
                             </button>
@@ -521,6 +589,9 @@
                                 <state key="normal" image="upload_vacc_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPhotoBtn:" destination="ghJ-dU-bTE" eventType="touchUpInside" id="Wn2-YH-TtU"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y9u-G0-VUE">
                                 <rect key="frame" x="0.0" y="20" width="1021" height="137"/>
@@ -617,6 +688,12 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="allergies" destination="HyJ-gA-Ea6" id="PL7-xm-sv8"/>
+                        <outlet property="bloodType" destination="Zac-qU-yer" id="6af-p1-OAh"/>
+                        <outlet property="diseaseHistory" destination="siV-fb-K3T" id="901-y7-s98"/>
+                        <outlet property="notes" destination="ZO5-Ec-o1a" id="itj-pO-BxU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjh-Y1-5Bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -653,6 +730,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logoutBtn:" destination="s31-Ps-4FX" eventType="touchUpInside" id="7At-25-PAF"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="ZrR-fg-o1k"/>
                                 </connections>
                             </button>
@@ -722,6 +800,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logoutBtn:" destination="hf6-fe-PXd" eventType="touchUpInside" id="9K2-8p-5IE"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="uMt-ID-hjg"/>
                                 </connections>
                             </button>
@@ -813,6 +892,9 @@
                                 <state key="normal" image="search_profile_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchBtn:" destination="hf6-fe-PXd" eventType="touchUpInside" id="bRJ-Wc-PhV"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fsu-80-9pt">
                                 <rect key="frame" x="60" y="541" width="150" height="6"/>
@@ -847,6 +929,12 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="day" destination="lAW-VE-P6a" id="Fkd-hx-4VO"/>
+                        <outlet property="firstName" destination="Kv5-0J-I3P" id="Uy7-LD-1fV"/>
+                        <outlet property="lastName" destination="5fx-0e-mno" id="mQQ-zO-DZ9"/>
+                        <outlet property="month" destination="4o5-Oa-qab" id="eaf-ce-m5g"/>
+                        <outlet property="userId" destination="Thn-Sv-0Al" id="oiU-LE-wsU"/>
+                        <outlet property="year" destination="FKj-jc-MjB" id="Mhu-Fu-a8g"/>
                         <segue destination="kcv-jY-1Qp" kind="modal" id="A8B-SG-7ZX"/>
                     </connections>
                 </viewController>

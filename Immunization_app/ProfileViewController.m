@@ -35,4 +35,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)updateInfoBtn:(id)sender {
+}
+
+- (IBAction)vaccinationBtn:(id)sender {
+}
+
+- (IBAction)medicalHistory:(id)sender {
+}
+
+- (IBAction)uploadPhotoBtn:(id)sender {
+}
+
+- (IBAction)logoutBtn:(id)sender {
+}
+
+
+- (IBAction)vaccination:(id)sender {
+}
+
 @end

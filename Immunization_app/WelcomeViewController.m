@@ -35,4 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)logout_btn:(id)sender {
+}
+- (IBAction)loginBtn:(id)sender {
+}
+- (IBAction)logoutBtn:(id)sender {
+}
 @end
