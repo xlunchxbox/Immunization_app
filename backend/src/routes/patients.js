@@ -31,18 +31,26 @@ exports.Patients = function() {
         }, function(err, collection) {
           if (err) {
             console.log("The 'patients' collection doesn't exist. Creating it with sample data...");
-            populateDB();
+            db.collection('patients', function(err, collection) {
+              collection.insert(getSamplePatients(), {
+                safe: true
+              }, function(err, result) {});
+            });
           }
         });
       }
     });
   };
 
+  this.closeDB = function() {
+    db.close();
+  };
+
   this.login = function(req, res) {
     var post = req.body;
-    console.log(post);
+    //console.log(post);
     if (post && post.username && post.password) {
-      console.log("Username: " + post.username + ", Password: " + post.password);
+      //console.log("Username: " + post.username + ", Password: " + post.password);
       if (authenticateUser(post.username, post.password)) {
         req.session.user_id = post.username;
         res.send('{status: "success"}');
@@ -155,7 +163,7 @@ exports.Patients = function() {
   };
 
   var authenticateUser = function(username, password) {
-    console.log('' + username + " " + password);
+    //console.log('' + username + " " + password);
     for (var user in authenticatedUsers) {
       if (authenticatedUsers[user].username === username && authenticatedUsers[user].password === password)
         return true;
@@ -169,35 +177,30 @@ exports.Patients = function() {
     username: "test",
     password: "test"
   }];
-};
 
-var populateDB = function() {
-  var patients = [{
-    firstName: "John",
-    middleName: "Arnold",
-    lastName: "Smith",
-    birthYear: "1992",
-    birthMonth: "11",
-    birthDay: "22",
-    contactPhone: "12815551234",
-    contactEmail: "john.smith@gmail.com",
-    picture: "john1.jpg"
-  }, {
-    firstName: "Mary",
-    middleName: "Ann",
-    lastName: "Whistler",
-    birthYear: "1997",
-    birthMonth: "3",
-    birthDay: "2",
-    contactPhone: "17135554321",
-    contactEmail: "mary.whistler@gmail.com",
-    picture: "mary1.jpg"
-  }];
+  var getSamplePatients = function() {
+    var patients = [{
+      firstName: "John",
+      middleName: "Arnold",
+      lastName: "Smith",
+      birthYear: "1992",
+      birthMonth: "11",
+      birthDay: "22",
+      contactPhone: "12815551234",
+      contactEmail: "john.smith@gmail.com",
+      picture: "john1.jpg"
+    }, {
+      firstName: "Mary",
+      middleName: "Ann",
+      lastName: "Whistler",
+      birthYear: "1997",
+      birthMonth: "3",
+      birthDay: "2",
+      contactPhone: "17135554321",
+      contactEmail: "mary.whistler@gmail.com",
+      picture: "mary1.jpg"
+    }];
 
-  db.collection('patients', function(err, collection) {
-    collection.insert(patients, {
-      safe: true
-    }, function(err, result) {});
-  });
-
+    return patients;
+  };
 };
