@@ -92,7 +92,8 @@
 
 
 - (IBAction)loginBtn:(id)sender {
-    NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"];
+    //NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"]; //locally at James' House
+    NSURL *URL = [NSURL URLWithString:@"http://98.201.113.185:3000/login"]; //public IP
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     request.HTTPMethod = @"POST";
     
