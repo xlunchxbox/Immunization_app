@@ -89,8 +89,29 @@
 //=============
 
 
-- (IBAction)login_btn:(id)sender {
-}
 - (IBAction)loginBtn:(id)sender {
+    
+    NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"POST";
+    NSString *params = @"username=test&password=test";
+
+    NSData *data = [params dataUsingEncoding:NSUTF8StringEncoding];
+    [request addValue:@"8bit" forHTTPHeaderField:@"Content-Transfer-Encoding"];
+    [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:[NSString stringWithFormat:@"%i", [data length]] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:data];
+    
+    NSError *errorReturned = nil;
+    NSURLResponse *theResponse =[[NSURLResponse alloc]init];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&theResponse error:&errorReturned];
+    
+    if (errorReturned) {
+        // Handle error.
+    }
+    else
+    {
+        NSLog([[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]);
+    }
 }
 @end
