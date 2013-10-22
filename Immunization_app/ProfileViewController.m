@@ -12,18 +12,10 @@
 
 @end
 
-@implementation ProfileViewController
+@implementation ProfileViewController 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-@synthesize firstName, lastName, dateOfBirth, gender, phoneNumber, streetAddress, city, state, zip, country, email;
+@synthesize firstName, lastName, dateOfBirth, gender,
+            phoneNumber,streetAddress, city, state, zip, country, email;
 
 @synthesize scrollView, activeField;
 
@@ -32,9 +24,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self textFieldDidBeginEditing:phoneNumber];
+    self.phoneNumber.delegate = self;
+    self.streetAddress.delegate = self;
+    self.city.delegate = self;
+    self.state.delegate = self;
+    self.zip.delegate = self;
+    self.country.delegate = self;
+    self.email.delegate = self;
     
     [self registerForKeyboardNotifications];
+    [activeField resignFirstResponder];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,8 +44,6 @@
 }
 
 
-//=============
-// Call this method somewhere in your view controller setup code.
 - (void)registerForKeyboardNotifications
 {
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -75,7 +73,7 @@
     if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
         CGPoint scrollPoint = CGPointMake(0.0, activeField.frame.origin.y-kbSize.height);
         [scrollView setContentOffset:scrollPoint animated:YES];
-        [scrollView setContentOffset:CGPointMake(0,activeField.center.y+60) animated:YES];
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-50) animated:YES];
     }
 }
 
@@ -86,6 +84,27 @@
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    // UITextField *first = self.activeField;
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        
+        [nextResponder becomeFirstResponder];
+      //  if(activeField == self.)
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-50) animated:YES];
+        
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     activeField = textField;
