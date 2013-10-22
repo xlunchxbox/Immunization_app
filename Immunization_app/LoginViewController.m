@@ -119,5 +119,14 @@
     {
         NSLog([[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]);
     }
+    
+    NSURL *url = [NSURL URLWithString:@"http://192.168.1.127:3000/patients"];
+    NSData *data2 = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data2 encoding:NSUTF8StringEncoding];
+    NSLog(@"ret=%@", ret);
+    
+    
+    
+    
 }
 @end
