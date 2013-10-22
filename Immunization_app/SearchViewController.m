@@ -15,17 +15,8 @@
 @implementation SearchViewController
 
 @synthesize scrollView;
-@synthesize activeField;
+@synthesize activeField; /// TO ACCESS CURRENT FIELD USE THIS
 @synthesize firstName, lastName, month, day, year, userId;
-
-enum {
-    FirstNameFieldTag = 0,
-    LastNameFieldTag,
-    MonthFieldTag,
-    DayFieldTag,
-    YearFieldTag,
-    UserIdFieldTag
-};
 
 
 - (void)viewDidLoad
@@ -38,7 +29,7 @@ enum {
     self.day.delegate = self;
     self.year.delegate = self;
     self.userId.delegate = self;
-
+    
     [self registerForKeyboardNotifications];
     [activeField resignFirstResponder];
     
@@ -93,6 +84,27 @@ enum {
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    // UITextField *first = self.activeField;
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        
+        [nextResponder becomeFirstResponder];
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-60) animated:YES];
+        //[self registerForKeyboardNotifications];
+        
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     activeField = textField;

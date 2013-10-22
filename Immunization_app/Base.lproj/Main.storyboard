@@ -43,12 +43,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cTf-QZ-JaW" id="twa-xO-ILB"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-Uw-h1g">
                                         <rect key="frame" x="312" y="383" width="400" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cTf-QZ-JaW" id="xar-xu-c3b"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yct-uo-qTF">
                                         <rect key="frame" x="503" y="425" width="232" height="55"/>
@@ -1046,11 +1052,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="G0T-mo-JzH"/>
-        <segue reference="A8B-SG-7ZX"/>
-        <segue reference="Nr9-11-0WL"/>
-        <segue reference="uMt-ID-hjg"/>
-        <segue reference="371-UD-eMu"/>
         <segue reference="9SK-qd-XXq"/>
+        <segue reference="hOj-7q-27i"/>
+        <segue reference="uMt-ID-hjg"/>
+        <segue reference="hI9-f3-Kuj"/>
+        <segue reference="G0T-mo-JzH"/>
+        <segue reference="371-UD-eMu"/>
     </inferredMetricsTieBreakers>
 </document>
