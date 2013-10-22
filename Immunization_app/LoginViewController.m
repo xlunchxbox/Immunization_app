@@ -92,11 +92,15 @@
 
 
 - (IBAction)loginBtn:(id)sender {
-    
     NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     request.HTTPMethod = @"POST";
-    NSString *params = @"username=test&password=test";
+    
+    
+    
+    NSString *params = [NSString stringWithFormat:@"username=%@&password=%@", username.text, password.text];
+    
+//    NSString *params = @"username=test&password=test"; //test string for DB
 
     NSData *data = [params dataUsingEncoding:NSUTF8StringEncoding];
     [request addValue:@"8bit" forHTTPHeaderField:@"Content-Transfer-Encoding"];
