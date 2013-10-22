@@ -18,23 +18,29 @@
 @synthesize activeField;
 @synthesize firstName, lastName, month, day, year, userId;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+enum {
+    FirstNameFieldTag = 0,
+    LastNameFieldTag,
+    MonthFieldTag,
+    DayFieldTag,
+    YearFieldTag,
+    UserIdFieldTag
+};
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
-    [self textFieldDidBeginEditing:firstName];
-    
+    self.firstName.delegate = self;
+    self.lastName.delegate = self;
+    self.month.delegate = self;
+    self.day.delegate = self;
+    self.year.delegate = self;
+    self.userId.delegate = self;
+
     [self registerForKeyboardNotifications];
+    [activeField resignFirstResponder];
     
 }
 

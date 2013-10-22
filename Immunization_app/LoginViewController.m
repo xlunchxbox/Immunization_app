@@ -66,7 +66,7 @@
     if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
         CGPoint scrollPoint = CGPointMake(0.0, activeField.frame.origin.y-kbSize.height);
         [scrollView setContentOffset:scrollPoint animated:YES];
-        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-60) animated:YES];
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-200) animated:YES];
     }
 }
 
