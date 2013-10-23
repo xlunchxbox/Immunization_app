@@ -51,9 +51,10 @@ exports.Patients = function() {
     //console.log(post);
     if (post && post.username && post.password) {
       //console.log("Username: " + post.username + ", Password: " + post.password);
-      if (authenticateUser(post.username, post.password)) {
+      var user = authenticateUser(post.username, post.password);
+      if (user) {
         req.session.user_id = post.username;
-        res.send('{status: "success"}');
+        res.send('{status: "success", firstName: "' + user.firstName + '"}');
       } else {
         res.send('{status: "failure"}');
       }
@@ -77,6 +78,7 @@ exports.Patients = function() {
 
   this.findPatientById = function(req, res) {
     var id = req.params.id;
+    //console.log(req);
     console.log('Retrieving Patient Record for ID: ' + id);
     db.collection('patients', function(err, collection) {
       collection.findOne({
@@ -151,6 +153,30 @@ exports.Patients = function() {
     });
   };
 
+  this.searchPatient = function(req, res) {
+    var search = req.body;
+
+    for(var key in search) {
+      if(search[key] === ""){
+        delete search[key];
+      }
+    }
+
+    console.log('Searching For Patient: ' + JSON.stringify(search));
+    db.collection('patients', function(err, collection) {
+      collection.find(search).toArray(function(err, item) {
+
+        if (err) {
+          res.send('{status: "failure"}');
+        } else {
+          //console.log(item);
+          res.send(item);
+        }
+
+      });
+    });
+  };
+
 
   this.checkAuth = function(req, res, next) {
     if (req.session.user_id) {
@@ -166,14 +192,14 @@ exports.Patients = function() {
     //console.log('' + username + " " + password);
     for (var user in authenticatedUsers) {
       if (authenticatedUsers[user].username === username && authenticatedUsers[user].password === password)
-        return true;
+        return authenticatedUsers[user];
     }
-    return false;
+    return null;
   };
 
   var authenticatedUsers = [{
-    firstName: "Frauline",
-    lastName: "Gerberitz",
+    firstName: "Betty",
+    lastName: "Crocker",
     username: "test",
     password: "test"
   }];
