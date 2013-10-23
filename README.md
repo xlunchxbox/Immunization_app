@@ -23,9 +23,14 @@ Todo
 
 ### /search (Post)
 * Request:
-  * firstName
-  * lastName
-  * birthMonth
+  *  firstName?
+  *  middleName?
+  *  lastName?
+  *  birthYear?
+  *  birthMonth?
+  *  birthDay?
+  *  contactPhone?
+  *  contactEmail?
 * Response list:
   *  firstName
   *  middleName
