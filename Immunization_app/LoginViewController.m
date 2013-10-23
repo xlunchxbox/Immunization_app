@@ -24,7 +24,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self textFieldDidBeginEditing:username];
+    self.password.delegate = self;
+    self.username.delegate = self;
+    
     [self registerForKeyboardNotifications];
 }
 
@@ -66,7 +68,7 @@
     if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
         CGPoint scrollPoint = CGPointMake(0.0, activeField.frame.origin.y-kbSize.height);
         [scrollView setContentOffset:scrollPoint animated:YES];
-        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-60) animated:YES];
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-200) animated:YES];
     }
 }
 
@@ -89,8 +91,43 @@
 //=============
 
 
-- (IBAction)login_btn:(id)sender {
-}
 - (IBAction)loginBtn:(id)sender {
+    //NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"]; //locally at James' House
+    NSURL *URL = [NSURL URLWithString:@"http://98.201.113.185:3000/login"]; //public IP
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"POST";
+    
+    
+    
+    NSString *params = [NSString stringWithFormat:@"username=%@&password=%@", username.text, password.text];
+    
+//    NSString *params = @"username=test&password=test"; //test string for DB
+
+    NSData *data = [params dataUsingEncoding:NSUTF8StringEncoding];
+    [request addValue:@"8bit" forHTTPHeaderField:@"Content-Transfer-Encoding"];
+    [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:[NSString stringWithFormat:@"%i", [data length]] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:data];
+    
+    NSError *errorReturned = nil;
+    NSURLResponse *theResponse =[[NSURLResponse alloc]init];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&theResponse error:&errorReturned];
+    
+    if (errorReturned) {
+        // Handle error.
+    }
+    else
+    {
+        NSLog([[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]);
+    }
+    
+    NSURL *url = [NSURL URLWithString:@"http://192.168.1.127:3000/patients"];
+    NSData *data2 = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data2 encoding:NSUTF8StringEncoding];
+    NSLog(@"ret=%@", ret);
+    
+    
+    
+    
 }
 @end

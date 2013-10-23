@@ -43,12 +43,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cTf-QZ-JaW" id="twa-xO-ILB"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-Uw-h1g">
                                         <rect key="frame" x="312" y="383" width="400" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cTf-QZ-JaW" id="xar-xu-c3b"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yct-uo-qTF">
                                         <rect key="frame" x="503" y="425" width="232" height="55"/>
@@ -210,7 +216,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiS-Hq-YGc">
-                                <rect key="frame" x="460" y="225" width="420" height="498"/>
+                                <rect key="frame" x="460" y="225" width="537" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpL-BO-YKB">
@@ -262,47 +268,68 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="555-555-5555" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-RH-V6v">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="555-555-5555" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-RH-V6v">
                                         <rect key="frame" x="20" y="199" width="380" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="e1I-hU-7ax"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234 Penny Lane" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-ew-4gO">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234 Penny Lane" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-ew-4gO">
                                         <rect key="frame" x="20" y="290" width="380" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="zyR-Gk-aHK"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-Y3-11J">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-Y3-11J">
                                         <rect key="frame" x="20" y="368" width="194" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="Pu9-QZ-J2e"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-4E-NC6">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-4E-NC6">
                                         <rect key="frame" x="315" y="368" width="85" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="mTa-3z-1UJ"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-lf-Cuf">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-lf-Cuf">
                                         <rect key="frame" x="222" y="368" width="85" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="emL-0k-U3k"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDr-VZ-4bP">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDr-VZ-4bP">
                                         <rect key="frame" x="20" y="448" width="194" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="dHb-jn-CBL"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="johndoe@email.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-U2-fLe">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="johndoe@email.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-U2-fLe">
                                         <rect key="frame" x="222" y="448" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="jiS-Hq-YGc" id="FmR-sU-b7m"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI8-ym-iZU">
                                         <rect key="frame" x="20" y="20" width="104" height="23"/>
@@ -368,10 +395,17 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="city" destination="u1B-Y3-11J" id="4XT-wC-T6N"/>
+                        <outlet property="country" destination="iDr-VZ-4bP" id="Sny-nV-55r"/>
+                        <outlet property="email" destination="ebj-U2-fLe" id="Hr6-1C-JVU"/>
                         <outlet property="patientId" destination="5d1-lC-Gvk" id="lnS-sA-qC7"/>
                         <outlet property="patientName" destination="8XA-6d-N0f" id="8NC-6a-4nK"/>
+                        <outlet property="phoneNumber" destination="TNz-RH-V6v" id="3V0-zs-whe"/>
                         <outlet property="profileImage" destination="Rac-E7-U5I" id="2ow-Qi-Yfb"/>
                         <outlet property="scrollView" destination="jiS-Hq-YGc" id="yrH-xU-Pdj"/>
+                        <outlet property="state" destination="sjN-lf-Cuf" id="AHr-C2-mOb"/>
+                        <outlet property="streetAddress" destination="iUB-ew-4gO" id="6OI-vP-anU"/>
+                        <outlet property="zip" destination="dfB-4E-NC6" id="zsc-6d-obx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9U-nL-dsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -713,18 +747,87 @@
                         <viewControllerLayoutGuide type="top" id="rZL-nI-28U"/>
                         <viewControllerLayoutGuide type="bottom" id="50A-JZ-8FL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SkB-5S-u6k">
+                    <view key="view" contentMode="scaleToFill" verticalHuggingPriority="1000" id="SkB-5S-u6k">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe3-wy-Kp4">
-                                <rect key="frame" x="449" y="414" width="203" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrY-gS-Wvd">
+                                <rect key="frame" x="190" y="201" width="640" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TEST BUTTON, GOES HOME">
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqG-7r-AG0">
+                                <rect key="frame" x="28" y="238" width="120" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="take_photo_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="8EJ-cE-37g"/>
+                                    <action selector="useCamera:" destination="gWZ-fi-D42" eventType="touchUpInside" id="I3f-0u-MCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-dL-uiO">
+                                <rect key="frame" x="46" y="492" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camera Roll">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useCameraRoll:" destination="gWZ-fi-D42" eventType="touchUpInside" id="rkF-BV-8bB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_outer_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUB-X6-cm9">
+                                <rect key="frame" x="600" y="20" width="34" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_outer_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="VK9-eb-pbg">
+                                <rect key="frame" x="1017" y="20" width="8" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odf-Ra-Zlh">
+                                <rect key="frame" x="20" y="53" width="363" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav_logo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s31-Ps-4FX" kind="modal" id="Ds1-x7-BMK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-Kl-SXW">
+                                <rect key="frame" x="0.0" y="20" width="1021" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkX-ng-KbI">
+                                <rect key="frame" x="890" y="20" width="120" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="logout_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="V2U-jQ-fH5"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="1qT-Sl-c0M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUk-aB-Bo7">
+                                <rect key="frame" x="635" y="20" width="120" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="medical_history.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="medicalHistoryBtn:" destination="Ubz-Cm-aCm" eventType="touchUpInside" id="eri-m0-Y55"/>
+                                    <segue destination="ghJ-dU-bTE" kind="modal" id="q1G-m0-4ID"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-43-CV2">
+                                <rect key="frame" x="763" y="20" width="120" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="vaccination_chart_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vaccinationBtn:" destination="ghJ-dU-bTE" eventType="touchUpInside" id="6Q9-gx-Yii"/>
+                                    <segue destination="Ubz-Cm-aCm" kind="modal" id="uG8-H9-Lgf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -732,6 +835,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView" destination="OrY-gS-Wvd" id="8PX-H9-G88"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wO8-qz-y07" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -797,12 +903,12 @@
                                     <segue destination="hf6-fe-PXd" kind="modal" id="ZLZ-Ye-7AD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nurse_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yi7-5x-EmG">
-                                <rect key="frame" x="646" y="214" width="283" height="463"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-za-412">
                                 <rect key="frame" x="0.0" y="20" width="1021" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nurse_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="M6N-d5-Gbo">
+                                <rect key="frame" x="646" y="214" width="283" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -861,7 +967,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-eI-ZNn">
-                                <rect key="frame" x="20" y="194" width="386" height="523"/>
+                                <rect key="frame" x="20" y="194" width="428" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for Patient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqP-vi-hI3">
@@ -906,41 +1012,59 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="John" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kv5-0J-I3P">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="John" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kv5-0J-I3P">
                                         <rect key="frame" x="20" y="99" width="346" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="HOo-CE-aie"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-0e-mno">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-0e-mno">
                                         <rect key="frame" x="20" y="201" width="346" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="WFJ-Ed-Umg"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-Oa-qab">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-Oa-qab">
                                         <rect key="frame" x="20" y="290" width="110" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="9ng-yu-BKj"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Day" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-VE-P6a">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Day" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-VE-P6a">
                                         <rect key="frame" x="138" y="290" width="110" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="emU-B5-Omd"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-jc-MjB">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-jc-MjB">
                                         <rect key="frame" x="256" y="290" width="110" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="TyH-ah-6sk"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-Sv-0Al">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-Sv-0Al">
                                         <rect key="frame" x="20" y="392" width="346" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GuT-eI-ZNn" id="yCt-Ee-VdE"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U35-hm-CAX">
                                         <rect key="frame" x="20" y="439" width="346" height="64"/>
@@ -1006,45 +1130,21 @@
         <image name="birth_btn.png" width="96" height="100"/>
         <image name="birth_btn_red.png" width="96" height="100"/>
         <image name="line_image.png" width="150" height="6"/>
-        <image name="line_image.png" width="150" height="6"/>
         <image name="login_btn.png" width="189" height="55"/>
         <image name="login_page_logo.png" width="679" height="81"/>
         <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="medical_history.png" width="120" height="137"/>
         <image name="medical_history.png" width="120" height="137"/>
         <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nurse_image.png" width="283" height="463"/>
         <image name="profile_image_red.png" width="220" height="242"/>
         <image name="search_bigger.png" width="396" height="78"/>
         <image name="search_profile_btn.png" width="346" height="64"/>
+        <image name="take_photo_btn.png" width="120" height="137"/>
         <image name="update_info_btn.png" width="235" height="62"/>
         <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="vaccination_chart_btn.png" width="120" height="137"/>
         <image name="vaccination_chart_btn.png" width="120" height="137"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1053,11 +1153,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="J2O-XD-KjQ"/>
-        <segue reference="pwq-UA-f1t"/>
-        <segue reference="S3f-77-VUj"/>
-        <segue reference="Xjm-rn-bWu"/>
-        <segue reference="8EJ-cE-37g"/>
+        <segue reference="VJc-37-fMN"/>
+        <segue reference="uG8-H9-Lgf"/>
+        <segue reference="Ds1-x7-BMK"/>
+        <segue reference="q1G-m0-4ID"/>
+        <segue reference="1qT-Sl-c0M"/>
         <segue reference="A8B-SG-7ZX"/>
     </inferredMetricsTieBreakers>
 </document>

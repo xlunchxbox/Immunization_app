@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3605F81181753DE001B948C /* nurse_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F80181753DE001B948C /* nurse_image.png */; };
+		E3605F8318175536001B948C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3605F8218175536001B948C /* MobileCoreServices.framework */; };
+		E3605F8C18175F81001B948C /* take_photo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F8B18175F81001B948C /* take_photo_btn.png */; };
 		E3A9DBE81814A6310001D429 /* search_bigger.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE71814A6310001D429 /* search_bigger.png */; };
 		E3A9DBEA1814BAEE0001D429 /* nav_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE91814BAEE0001D429 /* nav_background.png */; };
 		E3A9DBEC1814BEBC0001D429 /* medical_history.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBEB1814BEBC0001D429 /* medical_history.png */; };
@@ -43,12 +46,9 @@
 		E3B5ACAE18101FFE00711A1A /* 9_13_years_btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8918101FFD00711A1A /* 9_13_years_btn_red.png */; };
 		E3B5ACAF18101FFE00711A1A /* birth_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8A18101FFD00711A1A /* birth_btn.png */; };
 		E3B5ACB018101FFE00711A1A /* birth_btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8B18101FFD00711A1A /* birth_btn_red.png */; };
-		E3B5ACB118101FFE00711A1A /* add_patient_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8D18101FFD00711A1A /* add_patient_btn.png */; };
 		E3B5ACB218101FFE00711A1A /* create_account_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8E18101FFD00711A1A /* create_account_btn.png */; };
 		E3B5ACB318101FFE00711A1A /* login_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC8F18101FFD00711A1A /* login_btn.png */; };
 		E3B5ACB418101FFE00711A1A /* login_page_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9018101FFD00711A1A /* login_page_logo.png */; };
-		E3B5ACB518101FFE00711A1A /* nurse_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9118101FFD00711A1A /* nurse_image.png */; };
-		E3B5ACB618101FFE00711A1A /* search_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9218101FFD00711A1A /* search_btn.png */; };
 		E3B5ACB718101FFE00711A1A /* health_history_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9418101FFE00711A1A /* health_history_btn.png */; };
 		E3B5ACB818101FFE00711A1A /* logout_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9518101FFE00711A1A /* logout_btn.png */; };
 		E3B5ACB918101FFE00711A1A /* nav_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B5AC9618101FFE00711A1A /* nav_logo.png */; };
@@ -80,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3605F80181753DE001B948C /* nurse_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_image.png; path = ../nurse_image.png; sourceTree = "<group>"; };
+		E3605F8218175536001B948C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E3605F8B18175F81001B948C /* take_photo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_photo_btn.png; sourceTree = "<group>"; };
 		E3A9DBE71814A6310001D429 /* search_bigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bigger.png; sourceTree = "<group>"; };
 		E3A9DBE91814BAEE0001D429 /* nav_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_background.png; sourceTree = "<group>"; };
 		E3A9DBEB1814BEBC0001D429 /* medical_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical_history.png; sourceTree = "<group>"; };
@@ -121,12 +124,9 @@
 		E3B5AC8918101FFD00711A1A /* 9_13_years_btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_13_years_btn_red.png; sourceTree = "<group>"; };
 		E3B5AC8A18101FFD00711A1A /* birth_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birth_btn.png; sourceTree = "<group>"; };
 		E3B5AC8B18101FFD00711A1A /* birth_btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birth_btn_red.png; sourceTree = "<group>"; };
-		E3B5AC8D18101FFD00711A1A /* add_patient_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_patient_btn.png; path = ../login_screen/add_patient_btn.png; sourceTree = "<group>"; };
 		E3B5AC8E18101FFD00711A1A /* create_account_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create_account_btn.png; sourceTree = "<group>"; };
 		E3B5AC8F18101FFD00711A1A /* login_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_btn.png; sourceTree = "<group>"; };
 		E3B5AC9018101FFD00711A1A /* login_page_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_page_logo.png; sourceTree = "<group>"; };
-		E3B5AC9118101FFD00711A1A /* nurse_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_image.png; path = ../login_screen/nurse_image.png; sourceTree = "<group>"; };
-		E3B5AC9218101FFD00711A1A /* search_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search_btn.png; path = ../login_screen/search_btn.png; sourceTree = "<group>"; };
 		E3B5AC9418101FFE00711A1A /* health_history_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health_history_btn.png; sourceTree = "<group>"; };
 		E3B5AC9518101FFE00711A1A /* logout_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_btn.png; sourceTree = "<group>"; };
 		E3B5AC9618101FFE00711A1A /* nav_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_logo.png; sourceTree = "<group>"; };
@@ -158,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3605F8318175536001B948C /* MobileCoreServices.framework in Frameworks */,
 				E3B5AC4818101E7400711A1A /* CoreGraphics.framework in Frameworks */,
 				E3B5AC4A18101E7400711A1A /* UIKit.framework in Frameworks */,
 				E3B5AC4618101E7400711A1A /* Foundation.framework in Frameworks */,
@@ -177,6 +178,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3605F8A18175F81001B948C /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				E3605F8B18175F81001B948C /* take_photo_btn.png */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
 		E3A9DBF21814CAC50001D429 /* splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +217,7 @@
 		E3B5AC4418101E7400711A1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3605F8218175536001B948C /* MobileCoreServices.framework */,
 				E3B5AC4518101E7400711A1A /* Foundation.framework */,
 				E3B5AC4718101E7400711A1A /* CoreGraphics.framework */,
 				E3B5AC4918101E7400711A1A /* UIKit.framework */,
@@ -245,8 +255,8 @@
 		E3B5AC4C18101E7400711A1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3605F8A18175F81001B948C /* camera */,
 				E3A9DBF21814CAC50001D429 /* splash */,
-				E3B5AC7A18101FFD00711A1A /* home_screen */,
 				E3B5AC7B18101FFD00711A1A /* immunization_nav_btns */,
 				E3B5AC8C18101FFD00711A1A /* login_screen */,
 				E3B5AC9318101FFE00711A1A /* navigation_bar */,
@@ -278,16 +288,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E3B5AC7A18101FFD00711A1A /* home_screen */ = {
-			isa = PBXGroup;
-			children = (
-				E3B5AC9118101FFD00711A1A /* nurse_image.png */,
-				E3B5AC8D18101FFD00711A1A /* add_patient_btn.png */,
-				E3B5AC9218101FFD00711A1A /* search_btn.png */,
-			);
-			path = home_screen;
-			sourceTree = "<group>";
-		};
 		E3B5AC7B18101FFD00711A1A /* immunization_nav_btns */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +314,7 @@
 		E3B5AC8C18101FFD00711A1A /* login_screen */ = {
 			isa = PBXGroup;
 			children = (
+				E3605F80181753DE001B948C /* nurse_image.png */,
 				E3B5AC8E18101FFD00711A1A /* create_account_btn.png */,
 				E3B5AC8F18101FFD00711A1A /* login_btn.png */,
 				E3B5AC9018101FFD00711A1A /* login_page_logo.png */,
@@ -436,6 +437,7 @@
 			files = (
 				E3B5ACB418101FFE00711A1A /* login_page_logo.png in Resources */,
 				E3B5ACBE18101FFE00711A1A /* profile_image.png in Resources */,
+				E3605F8C18175F81001B948C /* take_photo_btn.png in Resources */,
 				E3B5ACBC18101FFE00711A1A /* upload_vacc_btn.png in Resources */,
 				E3A9DBE81814A6310001D429 /* search_bigger.png in Resources */,
 				E3B5ACAF18101FFE00711A1A /* birth_btn.png in Resources */,
@@ -450,7 +452,6 @@
 				E3B5ACA318101FFE00711A1A /* 14_weeks_btn.png in Resources */,
 				E3B5ACAD18101FFE00711A1A /* 9_13_years_btn.png in Resources */,
 				E3A9DBEE1814C6AF0001D429 /* profile_image_red.png in Resources */,
-				E3B5ACB618101FFE00711A1A /* search_btn.png in Resources */,
 				E3A9DBFA1814CDD30001D429 /* Icon.png in Resources */,
 				E3B5ACBA18101FFE00711A1A /* nav_outer_arrow.png in Resources */,
 				E3B5ACBD18101FFE00711A1A /* vaccination_chart_btn.png in Resources */,
@@ -464,14 +465,13 @@
 				E3B5ACC118101FFE00711A1A /* update_info_btn.png in Resources */,
 				E3B5ACA818101FFE00711A1A /* 2_5_years_btn_red.png in Resources */,
 				E3B5ACB918101FFE00711A1A /* nav_logo.png in Resources */,
-				E3B5ACB518101FFE00711A1A /* nurse_image.png in Resources */,
 				E3B5ACBB18101FFE00711A1A /* nav_outer_border.png in Resources */,
 				E3B5ACC018101FFE00711A1A /* search_profile_btn.png in Resources */,
-				E3B5ACB118101FFE00711A1A /* add_patient_btn.png in Resources */,
 				E3B5ACAA18101FFE00711A1A /* 6_weeks_btn_red.png in Resources */,
 				E3B5ACAB18101FFE00711A1A /* 9_12_months_btn.png in Resources */,
 				E3B5ACA918101FFE00711A1A /* 6_weeks_btn.png in Resources */,
 				E3A9DBEA1814BAEE0001D429 /* nav_background.png in Resources */,
+				E3605F81181753DE001B948C /* nurse_image.png in Resources */,
 				E3B5ACA618101FFE00711A1A /* 15_18_months_btn_red.png in Resources */,
 				E3B5ACC5181029BD00711A1A /* line_image.png in Resources */,
 				E3B5ACBF18101FFE00711A1A /* profile_image_mini.png in Resources */,

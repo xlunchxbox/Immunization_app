@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *firstName;
-@property (weak, nonatomic) IBOutlet UITextField *lastName;
-@property (weak, nonatomic) IBOutlet UITextField *month;
-@property (weak, nonatomic) IBOutlet UITextField *day;
-@property (weak, nonatomic) IBOutlet UITextField *year;
-@property (weak, nonatomic) IBOutlet UITextField *userId;
+@interface SearchViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *firstName;
+@property (strong, nonatomic) IBOutlet UITextField *lastName;
+@property (strong, nonatomic) IBOutlet UITextField *month;
+@property (strong, nonatomic) IBOutlet UITextField *day;
+@property (strong, nonatomic) IBOutlet UITextField *year;
+@property (strong, nonatomic) IBOutlet UITextField *userId;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UITextField *activeField;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UITextField *activeField;
 
 
 

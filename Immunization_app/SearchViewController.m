@@ -15,26 +15,23 @@
 @implementation SearchViewController
 
 @synthesize scrollView;
-@synthesize activeField;
+@synthesize activeField; /// TO ACCESS CURRENT FIELD USE THIS
 @synthesize firstName, lastName, month, day, year, userId;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
-    [self textFieldDidBeginEditing:firstName];
+    self.firstName.delegate = self;
+    self.lastName.delegate = self;
+    self.month.delegate = self;
+    self.day.delegate = self;
+    self.year.delegate = self;
+    self.userId.delegate = self;
     
     [self registerForKeyboardNotifications];
+    [activeField resignFirstResponder];
     
 }
 
@@ -87,6 +84,27 @@
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    // UITextField *first = self.activeField;
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        
+        [nextResponder becomeFirstResponder];
+        [scrollView setContentOffset:CGPointMake(0,activeField.center.y-60) animated:YES];
+        //[self registerForKeyboardNotifications];
+        
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     activeField = textField;
