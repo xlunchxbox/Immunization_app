@@ -3,21 +3,38 @@ Immunization_app
 
 2013 Bill &amp; Melinda Gates Immunization App
 
-### Backend API
+## Backend API
 
-__/login__
-* _Post_:
-   * Req: 'username=[username]&password=[password]', ex. 'username=test&password=test'
-   * Res: JSON object with status field, ex. {status: "success"}, {status: "failure"}
+### /login (Post)
 
-__/logout__
-* _Post_:
-   * Req: <none>
-   * Res: JSON object with status field, ex. {status: "success"}
+* Request:
+  * username
+  * password
+* Response:
+  * status: "success" or "failure"
+  * firstName?
 
-__/patients__
-* _Get_, get all patients:
-   * Req: <none>
-   * Res: 
+### /logout (Post)
+* Response:
+  * status: "success" or "failure"
 
-TBC..
+### /patients (Get)
+Todo
+
+### /search (Post)
+* Request:
+  * firstName
+  * lastName
+  * birthMonth
+* Response list:
+  *  firstName
+  *  middleName
+  *  lastName
+  *  birthYear
+  *  birthMonth
+  *  birthDay
+  *  contactPhone
+  *  contactEmail
+  *  picture
+  *  _id
+
