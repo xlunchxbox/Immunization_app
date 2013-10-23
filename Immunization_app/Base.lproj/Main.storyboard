@@ -831,12 +831,12 @@
                                     <segue destination="hf6-fe-PXd" kind="modal" id="ZLZ-Ye-7AD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nurse_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yi7-5x-EmG">
-                                <rect key="frame" x="646" y="214" width="283" height="463"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-za-412">
                                 <rect key="frame" x="0.0" y="20" width="1021" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nurse_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="M6N-d5-Gbo">
+                                <rect key="frame" x="646" y="214" width="283" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

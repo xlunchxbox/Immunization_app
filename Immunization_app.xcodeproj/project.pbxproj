@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3605F81181753DE001B948C /* nurse_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F80181753DE001B948C /* nurse_image.png */; };
 		E3A9DBE81814A6310001D429 /* search_bigger.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE71814A6310001D429 /* search_bigger.png */; };
 		E3A9DBEA1814BAEE0001D429 /* nav_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE91814BAEE0001D429 /* nav_background.png */; };
 		E3A9DBEC1814BEBC0001D429 /* medical_history.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBEB1814BEBC0001D429 /* medical_history.png */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3605F80181753DE001B948C /* nurse_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse_image.png; sourceTree = "<group>"; };
 		E3A9DBE71814A6310001D429 /* search_bigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bigger.png; sourceTree = "<group>"; };
 		E3A9DBE91814BAEE0001D429 /* nav_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_background.png; sourceTree = "<group>"; };
 		E3A9DBEB1814BEBC0001D429 /* medical_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical_history.png; sourceTree = "<group>"; };
@@ -171,6 +173,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3605F7F181753A5001B948C /* home_screen */ = {
+			isa = PBXGroup;
+			children = (
+				E3605F80181753DE001B948C /* nurse_image.png */,
+			);
+			name = home_screen;
+			sourceTree = "<group>";
+		};
 		E3A9DBF21814CAC50001D429 /* splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		E3B5AC4C18101E7400711A1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3605F7F181753A5001B948C /* home_screen */,
 				E3A9DBF21814CAC50001D429 /* splash */,
 				E3B5AC7B18101FFD00711A1A /* immunization_nav_btns */,
 				E3B5AC8C18101FFD00711A1A /* login_screen */,
@@ -452,6 +463,7 @@
 				E3B5ACAB18101FFE00711A1A /* 9_12_months_btn.png in Resources */,
 				E3B5ACA918101FFE00711A1A /* 6_weeks_btn.png in Resources */,
 				E3A9DBEA1814BAEE0001D429 /* nav_background.png in Resources */,
+				E3605F81181753DE001B948C /* nurse_image.png in Resources */,
 				E3B5ACA618101FFE00711A1A /* 15_18_months_btn_red.png in Resources */,
 				E3B5ACC5181029BD00711A1A /* line_image.png in Resources */,
 				E3B5ACBF18101FFE00711A1A /* profile_image_mini.png in Resources */,
