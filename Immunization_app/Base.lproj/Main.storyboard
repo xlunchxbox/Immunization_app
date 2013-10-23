@@ -1058,35 +1058,13 @@
         <image name="birth_btn.png" width="96" height="100"/>
         <image name="birth_btn_red.png" width="96" height="100"/>
         <image name="line_image.png" width="150" height="6"/>
-        <image name="line_image.png" width="150" height="6"/>
         <image name="login_btn.png" width="189" height="55"/>
         <image name="login_page_logo.png" width="679" height="81"/>
         <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="logout_btn.png" width="120" height="137"/>
-        <image name="medical_history.png" width="120" height="137"/>
         <image name="medical_history.png" width="120" height="137"/>
         <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_background.png" width="1021" height="137"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
-        <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_logo.png" width="308" height="71"/>
         <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_arrow.png" width="34" height="136"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
-        <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nav_outer_border.png" width="8" height="137"/>
         <image name="nurse_image.png" width="283" height="463"/>
         <image name="profile_image_red.png" width="220" height="242"/>
@@ -1094,9 +1072,6 @@
         <image name="search_profile_btn.png" width="346" height="64"/>
         <image name="update_info_btn.png" width="235" height="62"/>
         <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="upload_vacc_btn.png" width="120" height="137"/>
-        <image name="vaccination_chart_btn.png" width="120" height="137"/>
         <image name="vaccination_chart_btn.png" width="120" height="137"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
