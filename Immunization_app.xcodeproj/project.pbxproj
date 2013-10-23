@@ -13,6 +13,7 @@
 		E3605F9318176F33001B948C /* x_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F9218176F33001B948C /* x_mark.png */; };
 		E3605F9518177256001B948C /* header_boxes.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F9418177256001B948C /* header_boxes.png */; };
 		E3605F9718177324001B948C /* line_break.png in Resources */ = {isa = PBXBuildFile; fileRef = E3605F9618177324001B948C /* line_break.png */; };
+		E39BBE6118184F43007D4D12 /* check_box.png in Resources */ = {isa = PBXBuildFile; fileRef = E39BBE6018184F43007D4D12 /* check_box.png */; };
 		E3A9DBE81814A6310001D429 /* search_bigger.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE71814A6310001D429 /* search_bigger.png */; };
 		E3A9DBEA1814BAEE0001D429 /* nav_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBE91814BAEE0001D429 /* nav_background.png */; };
 		E3A9DBEC1814BEBC0001D429 /* medical_history.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9DBEB1814BEBC0001D429 /* medical_history.png */; };
@@ -89,6 +90,7 @@
 		E3605F9218176F33001B948C /* x_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_mark.png; sourceTree = "<group>"; };
 		E3605F9418177256001B948C /* header_boxes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_boxes.png; sourceTree = "<group>"; };
 		E3605F9618177324001B948C /* line_break.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_break.png; sourceTree = "<group>"; };
+		E39BBE6018184F43007D4D12 /* check_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box.png; sourceTree = "<group>"; };
 		E3A9DBE71814A6310001D429 /* search_bigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bigger.png; sourceTree = "<group>"; };
 		E3A9DBE91814BAEE0001D429 /* nav_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_background.png; sourceTree = "<group>"; };
 		E3A9DBEB1814BEBC0001D429 /* medical_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical_history.png; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		E3605F8D18176D12001B948C /* vaccinations */ = {
 			isa = PBXGroup;
 			children = (
+				E39BBE6018184F43007D4D12 /* check_box.png */,
 				E3605F9618177324001B948C /* line_break.png */,
 				E3605F9418177256001B948C /* header_boxes.png */,
 				E3605F9218176F33001B948C /* x_mark.png */,
@@ -454,6 +457,7 @@
 			files = (
 				E3B5ACB418101FFE00711A1A /* login_page_logo.png in Resources */,
 				E3B5ACBE18101FFE00711A1A /* profile_image.png in Resources */,
+				E39BBE6118184F43007D4D12 /* check_box.png in Resources */,
 				E3605F8C18175F81001B948C /* take_photo_btn.png in Resources */,
 				E3B5ACBC18101FFE00711A1A /* upload_vacc_btn.png in Resources */,
 				E3A9DBE81814A6310001D429 /* search_bigger.png in Resources */,
