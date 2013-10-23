@@ -53,6 +53,15 @@
                            animated:YES completion:nil];
         _newMedia = YES;
     }
+    else{
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        
+        [myAlertView show];
+    }
 }
 
 - (IBAction)useCameraRoll:(id)sender {
