@@ -14,31 +14,36 @@ exports.Patients = function() {
     MongoServer = MongoLib.Server;
     MongoDB = MongoLib.Db;
     BSON = MongoLib.BSONPure;
+    var mongoUri = process.env.MONGOLAB_URI ||
+      process.env.MONGOHQ_URL ||
+      'mongodb://localhost/mydb';
 
-    server = new MongoServer('localhost', 27017, {
-      auto_reconnect: true
-    });
+    console.log(mongoUri);
+    MongoLib.connect(mongoUri, {}, function dbConnectCallback(error, database) {
+      db = database;
+      db.addListener("error", function handleError(error) {
+        console.log("Error connecting to MongoLab");
+      });
 
-    db = new MongoDB('patientdb', server, {
-      safe: true
-    });
-
-    db.open(function(err, db) {
-      if (!err) {
-        console.log("Connected to 'patientdb' database");
-        db.collection('patients', {
-          strict: true
-        }, function(err, collection) {
-          if (err) {
-            console.log("The 'patients' collection doesn't exist. Creating it with sample data...");
-            db.collection('patients', function(err, collection) {
-              collection.insert(getSamplePatients(), {
-                safe: true
-              }, function(err, result) {});
-            });
-          }
+      db.createCollection("patients", function collectionCallback(error, collection) {
+        console.log("Created Collection 'patients'");
+        db.collection('patients', function(err, collection) {
+          collection.remove({}, {}, function(err, result) {});
         });
-      }
+
+        console.log("Inserting sample patients");
+        db.collection('patients', function(err, collection) {
+          collection.insert(getSamplePatients(), {
+            safe: true
+          }, function(err, result) {});
+        });
+
+        db.collection('patients', function(err, collection) {
+          collection.find().toArray(function(err, items) {
+            //console.log(items);
+          });
+        });
+      });
     });
   };
 
@@ -47,16 +52,21 @@ exports.Patients = function() {
   };
 
   this.login = function(req, res) {
+    res.header("Content-Type", "application/json");
     var post = req.body;
-    //console.log(post);
+
     if (post && post.username && post.password) {
-      //console.log("Username: " + post.username + ", Password: " + post.password);
       var user = authenticateUser(post.username, post.password);
       if (user) {
         req.session.user_id = post.username;
-        res.send('{status: "success", firstName: "' + user.firstName + '"}');
+        res.send(JSON.stringify({
+          status: 'success',
+          firstName: user.firstName
+        }));
       } else {
-        res.send('{status: "failure"}');
+        res.send(JSON.stringify({
+          status: 'failure'
+        }));
       }
     } else {
       res.send('{status: "failure", errorMsg: "Problem with Post"}');
@@ -64,8 +74,11 @@ exports.Patients = function() {
   };
 
   this.logout = function(req, res) {
+    res.header("Content-Type", "application/json");
     delete req.session.user_id;
-    res.send('{status: "success"}');
+    res.send(JSON.stringify({
+      status: "success"
+    }));
   };
 
   this.findAllPatients = function(req, res) {
@@ -78,13 +91,19 @@ exports.Patients = function() {
 
   this.findPatientById = function(req, res) {
     var id = req.params.id;
-    //console.log(req);
     console.log('Retrieving Patient Record for ID: ' + id);
     db.collection('patients', function(err, collection) {
       collection.findOne({
         '_id': new BSON.ObjectID(id)
       }, function(err, item) {
-        res.send(item);
+        if (err) {
+          res.send(JSON.stringify({
+            status: "failure"
+          }));
+        } else if(item) {
+          console.log(item);
+          res.send(item);
+        }
       });
     });
   };
@@ -154,10 +173,11 @@ exports.Patients = function() {
   };
 
   this.searchPatient = function(req, res) {
+    res.header("Content-Type", "application/json");
     var search = req.body;
 
-    for(var key in search) {
-      if(search[key] === ""){
+    for (var key in search) {
+      if (search[key] === "") {
         delete search[key];
       }
     }
@@ -165,14 +185,13 @@ exports.Patients = function() {
     console.log('Searching For Patient: ' + JSON.stringify(search));
     db.collection('patients', function(err, collection) {
       collection.find(search).toArray(function(err, item) {
-
         if (err) {
-          res.send('{status: "failure"}');
+          res.send(JSON.stringify({
+            status: "failure"
+          }));
         } else {
-          //console.log(item);
           res.send(item);
         }
-
       });
     });
   };
@@ -189,7 +208,6 @@ exports.Patients = function() {
   };
 
   var authenticateUser = function(username, password) {
-    //console.log('' + username + " " + password);
     for (var user in authenticatedUsers) {
       if (authenticatedUsers[user].username === username && authenticatedUsers[user].password === password)
         return authenticatedUsers[user];
