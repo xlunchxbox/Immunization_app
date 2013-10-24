@@ -12,10 +12,9 @@
 
 @end
 
-
+extern AFHTTPRequestOperationManager * man;
 
 @implementation LoginViewController
-static AFHTTPRequestOperationManager *manager;
 
 @synthesize scrollView;
 @synthesize username;
@@ -96,9 +95,9 @@ static AFHTTPRequestOperationManager *manager;
 - (IBAction)loginBtn:(id)sender {
     //NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"]; //locally at James' House
     
-    manager = [AFHTTPRequestOperationManager manager];
+    man = [AFHTTPRequestOperationManager manager];
 	NSDictionary *parameters = @{@"username": self.username.text, @"password": self.password.text};
-	[manager POST:@"http://stark-beyond-9579.herokuapp.com/login"parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	[man POST:@"http://stark-beyond-9579.herokuapp.com/login"parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSLog(@"JSON: %@", responseObject);
 		if ([[responseObject valueForKey:@"status"] isEqualToString:@"success"]) {
 

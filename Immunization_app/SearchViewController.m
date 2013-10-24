@@ -12,7 +12,7 @@
 @interface SearchViewController ()
 
 @end
-
+extern AFHTTPRequestOperationManager * man;
 @implementation SearchViewController
 
 @synthesize scrollView;
@@ -160,30 +160,30 @@
                                  @"birthDay" : self.day.text,
                                  @"birthYear" : self.year.text,
                                  @"userID" : self.userId.text};
-//    
-//	[manager POST:@"http://stark-beyond-9579.herokuapp.com/search" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//		NSLog(@"JSON: %@", responseObject);
-//		if ([[responseObject valueForKey:@"status"] isEqualToString:@"success"]) {
-//			int count = [[responseObject valueForKey:@"total"] integerValue];
-//			NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
-//            
-//			for (int i = 1; i <= count; i++) {
-//				NSString *obj = [NSString stringWithFormat:@"%i", i];
-//				[array addObject:[responseObject objectForKey:obj]];
-//			}
-//            
-//            self.array = array;
-//            [ self.tableView reloadData];
-//
-//			[self performSegueWithIdentifier:@"bookList" sender:self];
-//            
-//		} else {
-//            [[[UIAlertView alloc] initWithTitle:@"Error Posting Book" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
-//        }
-//	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//		NSLog(@"Error: %@", error);
-//        [[[UIAlertView alloc] initWithTitle:@"Error Posting Book" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
-//	}];
+    
+	[man POST:@"http://stark-beyond-9579.herokuapp.com/search" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		NSLog(@"JSON: %@", responseObject);
+	
+        int count = 0;
+        for(id entry in responseObject)
+            count++;
+        NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
+
+        //int i = 1;
+			for (id entry in responseObject) {
+				//NSString *obj = [NSString stringWithFormat:@"%i", i];
+				[array addObject:entry];
+			}
+            
+            self.array = array;
+            [ self.tableView reloadData];
+
+			//[self performSegueWithIdentifier:@"bookList" sender:self];
+        
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		NSLog(@"Error: %@", error);
+        [[[UIAlertView alloc] initWithTitle:@"Error Authentication" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+	}];
 
 }
 
