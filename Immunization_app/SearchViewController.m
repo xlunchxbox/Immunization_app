@@ -7,7 +7,8 @@
 //
 
 #import "SearchViewController.h"
-
+#import "PatientTableCell.h"
+#import "AFNetworking.h"
 @interface SearchViewController ()
 
 @end
@@ -17,7 +18,7 @@
 @synthesize scrollView;
 @synthesize activeField; /// TO ACCESS CURRENT FIELD USE THIS
 @synthesize firstName, lastName, month, day, year, userId;
-
+@synthesize patientArray;
 
 - (void)viewDidLoad
 {
@@ -114,12 +115,76 @@
 {
     activeField = nil;
 }
-//=============
+//===========================
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    if(self.array == NULL)
+        return 0;
+    return [self.array  count];
+}
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor whiteColor];
+    } else {
+        cell.backgroundColor = [UIColor lightGrayColor];
+    }
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *CellIdentifier = @"Cell";
+    PatientTableCell *cell = (PatientTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    cell.firstName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"firstName"];
+    cell.lastName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"lastName"];
+
+    NSString* birthDay = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthDay"];
+    NSString* birthMonth = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthMonth"];
+    NSString* birthYear = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthYear"];
+    
+    cell.birthday.text = [NSString stringWithFormat:@"%@/%@/%@", birthMonth, birthDay, birthYear ];
+    
+    return cell;
+}
+//===========================
 
 - (IBAction)searchBtn:(id)sender {
+    
+	NSDictionary *parameters = @{@"firstName": self.firstName.text,
+                                 @"lastName" : self.lastName.text,
+                                 @"birthMonth" : self.month.text,
+                                 @"birthDay" : self.day.text,
+                                 @"birthYear" : self.year.text,
+                                 @"userID" : self.userId.text};
+//    
+//	[manager POST:@"http://stark-beyond-9579.herokuapp.com/search" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//		NSLog(@"JSON: %@", responseObject);
+//		if ([[responseObject valueForKey:@"status"] isEqualToString:@"success"]) {
+//			int count = [[responseObject valueForKey:@"total"] integerValue];
+//			NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
+//            
+//			for (int i = 1; i <= count; i++) {
+//				NSString *obj = [NSString stringWithFormat:@"%i", i];
+//				[array addObject:[responseObject objectForKey:obj]];
+//			}
+//            
+//            self.array = array;
+//            [ self.tableView reloadData];
+//
+//			[self performSegueWithIdentifier:@"bookList" sender:self];
+//            
+//		} else {
+//            [[[UIAlertView alloc] initWithTitle:@"Error Posting Book" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+//        }
+//	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//		NSLog(@"Error: %@", error);
+//        [[[UIAlertView alloc] initWithTitle:@"Error Posting Book" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+//	}];
+
 }
 
 - (IBAction)logoutBtn:(id)sender {

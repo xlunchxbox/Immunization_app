@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "AFNetworking.h"
 @interface LoginViewController ()
 
 @end
@@ -15,6 +15,8 @@
 
 
 @implementation LoginViewController
+static AFHTTPRequestOperationManager *manager;
+
 @synthesize scrollView;
 @synthesize username;
 @synthesize password;
@@ -93,41 +95,20 @@
 
 - (IBAction)loginBtn:(id)sender {
     //NSURL *URL = [NSURL URLWithString:@"http://192.168.1.127:3000/login"]; //locally at James' House
-    NSURL *URL = [NSURL URLWithString:@"http://stark-beyond-9579.herokuapp.com/login"]; //public IP
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
-    request.HTTPMethod = @"POST";
     
-    
-    
-    NSString *params = [NSString stringWithFormat:@"username=%@&password=%@", username.text, password.text];
-    
-//    NSString *params = @"username=test&password=test"; //test string for DB
+    manager = [AFHTTPRequestOperationManager manager];
+	NSDictionary *parameters = @{@"username": self.username.text, @"password": self.password.text};
+	[manager POST:@"http://stark-beyond-9579.herokuapp.com/login"parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		NSLog(@"JSON: %@", responseObject);
+		if ([[responseObject valueForKey:@"status"] isEqualToString:@"success"]) {
 
-    NSData *data = [params dataUsingEncoding:NSUTF8StringEncoding];
-    [request addValue:@"8bit" forHTTPHeaderField:@"Content-Transfer-Encoding"];
-    [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request addValue:[NSString stringWithFormat:@"%i", [data length]] forHTTPHeaderField:@"Content-Length"];
-    [request setHTTPBody:data];
-    
-    NSError *errorReturned = nil;
-    NSURLResponse *theResponse =[[NSURLResponse alloc]init];
-    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&theResponse error:&errorReturned];
-    
-    if (errorReturned) {
-        // Handle error.
-    }
-    else
-    {
-        NSLog([[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]);
-    }
-    
-    NSURL *url = [NSURL URLWithString:@"http://192.168.1.127:3000/patients"];
-    NSData *data2 = [NSData dataWithContentsOfURL:url];
-    NSString *ret = [[NSString alloc] initWithData:data2 encoding:NSUTF8StringEncoding];
-    NSLog(@"ret=%@", ret);
-    
-    
-    
-    
+		} else {
+            [[[UIAlertView alloc] initWithTitle:@"Error A" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+        }
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		NSLog(@"Error: %@", error);
+        [[[UIAlertView alloc] initWithTitle:@"Error B" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+	}];
+
 }
 @end

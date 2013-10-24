@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6312EDFE-AB12-4278-BF86-347C3B21EAF4</string>
+	<string>6356AAD0-6CCF-4B59-A804-CB792600FC5F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Immunization_app</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C463E608-BDB4-44B9-91C0-B4581AA4758D</key>
-		<string>https://github.com/xlunchxbox/Immunization_app</string>
+		<key>76F3D5BF-9293-4CDC-B906-8B11919E1629</key>
+		<string>https://github.com/xlunchxbox/Immunization_app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Immunization_app.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C463E608-BDB4-44B9-91C0-B4581AA4758D</key>
+		<key>76F3D5BF-9293-4CDC-B906-8B11919E1629</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/xlunchxbox/Immunization_app</string>
+	<string>https://github.com/xlunchxbox/Immunization_app.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C463E608-BDB4-44B9-91C0-B4581AA4758D</string>
+	<string>76F3D5BF-9293-4CDC-B906-8B11919E1629</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C463E608-BDB4-44B9-91C0-B4581AA4758D</string>
+			<string>76F3D5BF-9293-4CDC-B906-8B11919E1629</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Immunization_app</string>
 		</dict>

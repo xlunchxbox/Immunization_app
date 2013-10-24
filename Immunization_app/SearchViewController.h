@@ -19,8 +19,10 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextField *activeField;
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-
+@property (nonatomic) NSArray *patientArray;
+@property (nonatomic) NSMutableArray *array;
 
 - (IBAction)searchBtn:(id)sender;
 - (IBAction)logoutBtn:(id)sender;
