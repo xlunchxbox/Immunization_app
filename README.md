@@ -57,4 +57,6 @@ Updates a patient's info
   *  contactEmail
   *  picture
   *  _id
-
+ 
+### /populate (Get)
+Reload the database (in case something bad happened).
