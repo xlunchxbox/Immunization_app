@@ -7,17 +7,18 @@
 //
 
 #import "SearchViewController.h"
-
+#import "PatientTableCell.h"
+#import "AFNetworking.h"
 @interface SearchViewController ()
 
 @end
-
+extern AFHTTPRequestOperationManager * man;
 @implementation SearchViewController
 
 @synthesize scrollView;
 @synthesize activeField; /// TO ACCESS CURRENT FIELD USE THIS
 @synthesize firstName, lastName, month, day, year, userId;
-
+@synthesize patientArray;
 
 - (void)viewDidLoad
 {
@@ -114,12 +115,76 @@
 {
     activeField = nil;
 }
-//=============
+//===========================
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    if(self.array == NULL)
+        return 0;
+    return [self.array  count];
+}
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor whiteColor];
+    } else {
+        cell.backgroundColor = [UIColor lightGrayColor];
+    }
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *CellIdentifier = @"Cell";
+    PatientTableCell *cell = (PatientTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.firstName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"firstName"];
+    cell.lastName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"lastName"];
+
+    NSString* birthDay = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthDay"];
+    NSString* birthMonth = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthMonth"];
+    NSString* birthYear = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthYear"];
+    
+    cell.birthday.text = [NSString stringWithFormat:@"%@/%@/%@", birthMonth, birthDay, birthYear ];
+    
+    return cell;
+}
+//===========================
 
 - (IBAction)searchBtn:(id)sender {
+    
+	NSDictionary *parameters = @{@"firstName": self.firstName.text,
+                                 @"lastName" : self.lastName.text,
+                                 @"birthMonth" : self.month.text,
+                                 @"birthDay" : self.day.text,
+                                 @"birthYear" : self.year.text,
+                                 @"userID" : self.userId.text};
+    
+	[man POST:@"http://stark-beyond-9579.herokuapp.com/search" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		NSLog(@"JSON: %@", responseObject);
+	
+        int count = 0;
+        for(id entry in responseObject)
+            count++;
+        NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
+
+        //int i = 1;
+			for (id entry in responseObject) {
+				//NSString *obj = [NSString stringWithFormat:@"%i", i];
+				[array addObject:entry];
+			}
+            
+            self.array = array;
+            [ self.tableView reloadData];
+
+			//[self performSegueWithIdentifier:@"bookList" sender:self];
+        
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		NSLog(@"Error: %@", error);
+        [[[UIAlertView alloc] initWithTitle:@"Error Authentication" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+	}];
+
 }
 
 - (IBAction)logoutBtn:(id)sender {
