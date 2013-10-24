@@ -31,10 +31,32 @@
     self.zip.delegate = self;
     self.country.delegate = self;
     self.email.delegate = self;
+
+    
+    self.firstName.text = [self.patientArray valueForKey:@"firstName"];
+
+    self.lastName.text = [self.patientArray valueForKey:@"lastName"];
+    
+    NSString* birthDay = [self.patientArray valueForKey:@"birthDay"];
+    NSString* birthMonth = [self.patientArray  valueForKey:@"birthMonth"];
+    NSString* birthYear = [self.patientArray valueForKey:@"birthYear"];
+    self.dateOfBirth.text = [NSString stringWithFormat:@"%@/%@/%@",birthMonth, birthDay, birthYear ];
+
+    self.gender.text = [self.patientArray valueForKey:@"gender"];
+    
+    
+    
+    self.phoneNumber.text = [self.patientArray valueForKey:@"contactPhone"];
+    self.streetAddress.text = [self.patientArray valueForKey:@"contactStreetAddress"];
+    self.city.text = [self.patientArray valueForKey:@"contactCity"];
+    self.state.text = [self.patientArray valueForKey:@"contactState"];
+    self.zip.text = [self.patientArray valueForKey:@"contactZip"];
+    self.country.text = [self.patientArray valueForKey:@"contactCountry"];
+    self.email.text = [self.patientArray valueForKey:@"contactEmail"];
     
     [self registerForKeyboardNotifications];
     [activeField resignFirstResponder];
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -104,6 +126,8 @@
     }
     return NO; // We do not want UITextField to insert line-breaks.
 }
+
+
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {

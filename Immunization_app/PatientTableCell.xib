@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell tag="100" contentMode="scaleToFill" selectionStyle="default" indentationWidth="22" reuseIdentifier="Cell" rowHeight="40" id="HrO-Te-03U" customClass="PatientTableCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="22" reuseIdentifier="Cell" rowHeight="40" id="HrO-Te-03U" customClass="PatientTableCell">
             <rect key="frame" x="0.0" y="0.0" width="387" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HrO-Te-03U" id="15o-X5-vFp">
