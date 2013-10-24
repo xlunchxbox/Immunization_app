@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *country;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 
+@property (nonatomic) NSArray *patientArray;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITextField *activeField;
 

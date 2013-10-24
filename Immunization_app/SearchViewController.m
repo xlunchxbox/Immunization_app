@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "PatientTableCell.h"
 #import "AFNetworking.h"
+#import "ProfileViewController.h"
 @interface SearchViewController ()
 
 @end
@@ -136,17 +137,21 @@ extern AFHTTPRequestOperationManager * man;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    static NSString *CellIdentifier = @"Cell";
-    PatientTableCell *cell = (PatientTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell2";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                            forIndexPath:indexPath
+                             ];
     
-    cell.firstName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"firstName"];
-    cell.lastName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"lastName"];
+     NSString* firstName = [[self.array objectAtIndex:indexPath.item] valueForKey:@"firstName"];
+     NSString* lastName = [[self.array objectAtIndex:indexPath.item] valueForKey:@"lastName"];
 
     NSString* birthDay = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthDay"];
     NSString* birthMonth = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthMonth"];
     NSString* birthYear = [[self.array objectAtIndex:indexPath.item] valueForKey:@"birthYear"];
     
-    cell.birthday.text = [NSString stringWithFormat:@"%@/%@/%@", birthMonth, birthDay, birthYear ];
+    //cell.birthday.text = [NSString stringWithFormat:@"%@/%@/%@", birthMonth, birthDay, birthYear ];
+    UILabel* label = (UILabel*)[cell viewWithTag:100];
+    label.text = [NSString stringWithFormat:@"%@, %@ %@/%@/%@",lastName, firstName, birthMonth, birthDay, birthYear ];
     
     return cell;
 }
@@ -186,6 +191,18 @@ extern AFHTTPRequestOperationManager * man;
 	}];
 
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"selectPatient"]) {
+        ProfileViewController* c = (ProfileViewController*)[segue destinationViewController];
+        c.patientArray = [self.array objectAtIndex:self.tableView.indexPathForSelectedRow.item];
+	}
+}
+
 
 - (IBAction)logoutBtn:(id)sender {
 }
