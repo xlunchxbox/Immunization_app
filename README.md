@@ -21,6 +21,20 @@ Immunization_app
 ### /patients (Get)
 Todo
 
+### /patients/:id (Post)
+Updates a patient's info
+* Request:
+  *  firstName
+  *  middleName
+  *  lastName
+  *  birthYear
+  *  birthMonth
+  *  birthDay
+  *  contactPhone
+  *  contactEmail
+* Response:
+  * status: "success" or "failure"
+  
 ### /search (Post)
 * Request:
   *  firstName?
@@ -31,6 +45,7 @@ Todo
   *  birthDay?
   *  contactPhone?
   *  contactEmail?
+  *  _id?
 * Response list:
   *  firstName
   *  middleName

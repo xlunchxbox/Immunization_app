@@ -14,7 +14,7 @@
 
 @implementation ImmunizationViewController
 
-
+@synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [scrollView setScrollEnabled:YES];
+    [scrollView setContentSize:CGSizeMake(760, 2500)];
 }
 
 - (void)didReceiveMemoryWarning
