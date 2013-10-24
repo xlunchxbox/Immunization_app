@@ -137,7 +137,7 @@ extern AFHTTPRequestOperationManager * man;
 {
     
     static NSString *CellIdentifier = @"Cell";
-    PatientTableCell *cell = (PatientTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    PatientTableCell *cell = (PatientTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.firstName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"firstName"];
     cell.lastName.text = [[self.array objectAtIndex:indexPath.item] valueForKey:@"lastName"];
